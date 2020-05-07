@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Campfire Firm`,
-    description: `Grab a bag of marshmallows and prepare for fun! We make your marketing operations enjoyable, offering video, development, and design services.`,
+    description: `Grab a bag of marshmallows and prepare for fun! We make your marketing operations enjoyable, offering video, web development, and design services.`,
     author: `@bransorem`,
   },
   plugins: [
@@ -49,6 +49,9 @@ module.exports = {
           families: ['Montserrat']
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -2,6 +2,7 @@ html {
   font-family: "Montserrat", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  line-height: 1.2;
 }
 body {
   margin: 0;
@@ -9,8 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  // background: #03110D;
-  // background: radial-gradient(circle, rgba(142,96,54,1) 0%, rgba(10,35,26,1) 35%, rgba(2,14,10,1) 100%);
   background-repeat: no-repeat;
   min-height: 100vh;
   color: #5B483F;
@@ -19,36 +18,32 @@ a {
   color: #5B483F;
 }
 
-section {
-  padding: 2rem 0;
-  margin: auto;
-}
-
 .logo-container {
-  max-width: 200px;
+  max-width: 240px;
   margin: auto;
 
   @media (min-width: 768px) {
-    max-width: 400px;
+    max-width: 380px;
   }
 }
 
-#section-1 {
+section {
+  margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 400px;
-  font-size: 2rem;
-  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.2;
+  padding: 1rem 1rem;
 
   @media (min-width: 768px) {
     h1 {
       font-size: 3rem;
     }
-    padding: 0;
+    padding: 2rem 1rem;
   }
 }
 
@@ -58,6 +53,62 @@ section {
 
 .content {
   max-width: 960px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.cols {
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  .col {
+    flex: 1;
+
+    @media (min-width: 768px) {
+      &:first-of-type {
+        padding: 0 20px 0 0;
+      }
+      &:last-of-type {
+        padding: 0 0 0 20px;
+      }
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  svg {
+    margin: auto;
+  }
+
+  img {
+    background-color: #efefef;
+    border: 2px solid #eaeaea;
+    margin: 1rem auto;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.client {
+  max-width: 200px;
+}
+
+.shadow {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -279,7 +330,6 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 h1 {
   margin-left: 0;
@@ -291,8 +341,8 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, "Montserrat",
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // font-family: -apple-system, "Montserrat",
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;

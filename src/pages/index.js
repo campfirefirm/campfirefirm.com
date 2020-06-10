@@ -2,24 +2,19 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import animation from "../images/animationl.gif"
+import animation from "../images/animationlb.gif"
 import contours from "../images/contours.png"
+import bg2 from "../images/bg2.jpg"
+import bg3 from "../images/bg3.jpg"
 import design from "../images/design.png"
 import tomclimate from "../images/tom-climate.gif"
 import sugarscroll from "../images/sugar-scroll.jpg"
 import sugarex from "../images/sugar-expand.jpg"
-// import kag from "../images/kag.png"
-// import night from "../images/night.jpg"
+import stars from "../images/stars.jpg"
 
-// import image from "../images/fire.jpg"
 import parleypro from "../images/parleypro.png"
 import ts2020 from "../images/tom2020.png"
 import givegreen from "../images/givegreen.svg"
-// import map from "../images/papermap.jpg"
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faPencilRuler, faCode } from '@fortawesome/free-solid-svg-icons'
-// import { faYoutube } from '@fortawesome/free-brands-svg-icons'
-// import { RoughNotation } from "react-rough-notation";
 
 import { Link } from 'gatsby';
 
@@ -27,17 +22,17 @@ const IndexPage = () => {
   return (
   <Layout>
     <SEO title="Campfire Firm LLC" keywords={[`marketing`, `design`, `development`, `videography`, `cro`, `analytics`, `progressive`]} />
-    <section id="section-1" style={{ backgroundImage: `url(${contours})`, backgroundPositionY: "50%", paddingTop: '2rem' }}>
+    <section id="section-1" style={{ 
+      backgroundImage: `url(${stars})`,
+      backgroundPositionY: "100%",
+      paddingTop: '4rem',
+      color: '#fff',
+    }}>
       <div className="content cols" style={{ marginBottom: '-8rem' }}>
-        <div className="col">
+        <div className="col" style={{ marginTop: '-6rem' }}>
           <h1>Content for causes
             <span class="br">
               that matter
-              {/* <RoughNotation
-                type="highlight"
-                color="#FCF3B9"
-                show={true}
-              >that matter</RoughNotation> */}
             </span>
           </h1>
           <p>Campfire Firm is a creative team of experts in design, video production, and web development who are ready to help tell your story.</p>
@@ -51,7 +46,7 @@ const IndexPage = () => {
     </section>
 
 
-    <section style={{ paddingTop: '4rem', paddingBottom: '0', marginBottom: '-4rem' }}>
+    <section style={{ marginBottom: '-2rem' }}>
       <div className="content cols">
         <div className="col client">
           <img src={ts2020} alt="TOM2020" />
@@ -67,8 +62,8 @@ const IndexPage = () => {
 
 
     {/* F5FFFD */}
-    {/* <section style={{ backgroundImage: `url(${contours})`, backgroundPositionY: "50%" }}> */}
-    <section>
+    <section style={{ backgroundImage: `url(${contours})`, backgroundPositionY: "50%" }}>
+    {/* <section> */}
       <div className="content">
         <h2>&#8212; Video Production &#8212;</h2>
           <div className="video shadow">
@@ -106,7 +101,8 @@ const IndexPage = () => {
     </section>
 
 
-    <section style={{ paddingTop: '2rem', background: `#FFF`, paddingBottom: '6rem' }}> 
+    <section style={{ backgroundImage: `url(${bg2})`, backgroundPositionY: "50%", paddingBottom: '4rem' }}>
+    {/* <section style={{ paddingTop: '2rem', background: `#FFF`, paddingBottom: '6rem' }}>  */}
       <div className="content">
         <h2>&#8212; Web Development &#8212;</h2>
         <div style={{ position: 'relative', zIndex: 0, width: '100%', marginTop: '1rem' }}>
@@ -139,10 +135,22 @@ const IndexPage = () => {
     </section>
 
 
-    <section style={{ backgroundImage: `url(${contours})`, backgroundPositionY: "50%" }}>
+    {/* <section style={{ background: '#598C6E', color: '#fff' }}> */}
+    <section>
       <div className="content">
-        <h2>&#8212; We'd love to hear from you! &#8212;</h2>
-        <p><Link to={`contact`}>Contact us today</Link></p>
+        <h2>&#8212; About us &#8212;</h2>
+        <p>We named our studio Campfire because that's the vibe we wanted to attain in our working relationships - friends around a campfire brainstorming, laughing and developing the best ideas in this neck of the woods.</p>
+        <p>We're like the three elements that make a fire: oxygen, heat, and fuel.</p>
+        <p><b>Let's work together to ignite your vision to life!</b></p>
+      </div>
+    </section>
+
+
+    <section style={{ backgroundImage: `url(${bg3})`, backgroundPositionY: "50%", color: "#fff" }}>
+    {/* <section style={{ backgroundImage: `url(${contours})`, backgroundPositionY: "50%" }}> */}
+      <div className="content">
+        <h2>&#8212; Reach out to us! &#8212;</h2>
+        <p><Link style={{ color: '#fff' }} to={`contact`}>Contact us today</Link></p>
       </div>
     </section>
 

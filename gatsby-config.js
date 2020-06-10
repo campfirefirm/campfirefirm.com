@@ -46,7 +46,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Montserrat']
+          families: ['Halant', 'Roboto Slab']
         }
       }
     },

@@ -12,6 +12,7 @@ const NotFoundPage = () => (
     <section style={{ marginBottom: '7rem' }}>
       <h1 style={ { paddingTop: '20px', textAlign: 'center' }}>404</h1>
       <p style={ { fontSize: '32px', textAlign: 'center' }}>Are you lost?</p>
+      <p style={{ fontFamily: "Arial", fontSize: '32px' }}>(╯°□°)╯︵ ┻━┻</p>
       <p style={ { fontSize: '28px', lineHeight: '1.2', padding: '0 10px', textAlign: 'center' }}><Link to={'/'}>Find your way back to safety</Link> <span style={{ transform: 'rotate(-64deg)', display: 'inline-block' }}>&#10551;</span></p>
     </section>
     <section style={{ backgroundImage: `url(${map})` }}>

@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
 import animation from "../images/animationlb.gif"
 import contours from "../images/contours.png"
 import bg2 from "../images/bg2.jpg"
@@ -12,16 +13,13 @@ import sugarscroll from "../images/sugar-scroll.jpg"
 import sugarex from "../images/sugar-expand.jpg"
 import stars from "../images/stars.jpg"
 
-import parleypro from "../images/parleypro.png"
-import ts2020 from "../images/tom2020.png"
-import givegreen from "../images/givegreen.svg"
-
 import { Link } from 'gatsby';
 
 const IndexPage = () => {
   return (
   <Layout>
     <SEO title="Campfire Firm LLC" keywords={[`marketing`, `design`, `development`, `videography`, `cro`, `analytics`, `progressive`]} />
+    <section id="banner" className="hide"></section>
     <section id="section-1" style={{ 
       backgroundImage: `url(${stars})`,
       backgroundPositionY: "100%",
@@ -36,26 +34,12 @@ const IndexPage = () => {
             </span>
           </h1>
           <p>Campfire Firm is a creative team of experts in design, video production, and web development who are ready to help tell your story.</p>
+          <p><Link style={{ color: '#fff' }} to={`contact`}>Contact us today</Link></p>
         </div>
         <div className="col">
           <div className="logo-container">
             <img src={animation} alt="Campfire Firm" />
           </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section style={{ marginBottom: '-2rem' }}>
-      <div className="content cols">
-        <div className="col client">
-          <img src={ts2020} alt="TOM2020" />
-        </div>
-        <div className="col client">
-          <img src={givegreen} alt="GiveGreen" />
-        </div>
-        <div className="col client">
-          <img src={parleypro} alt="Parley Pro" />
         </div>
       </div>
     </section>
@@ -139,9 +123,7 @@ const IndexPage = () => {
     <section>
       <div className="content">
         <h2>&#8212; About us &#8212;</h2>
-        <p>We named our studio Campfire because that's the vibe we wanted to attain in our working relationships - friends around a campfire brainstorming, laughing and developing the best ideas in this neck of the woods.</p>
-        <p>We're like the three elements that make a fire: oxygen, heat, and fuel.</p>
-        <p><b>Let's work together to ignite your vision to life!</b></p>
+        <p>We named our studio Campfire because our company culture extends to our working relationships - the feeling of friends around a campfire brainstorming, laughing and developing the best ideas in this neck of the woods.</p>
       </div>
     </section>
 
@@ -171,7 +153,6 @@ const IndexPage = () => {
         </div>
       </div>
     </section> */}
-
 
 
 

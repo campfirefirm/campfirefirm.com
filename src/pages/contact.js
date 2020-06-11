@@ -16,7 +16,7 @@ const ContactPage = () => {
         <h2>&#8212; Reach out to us! &#8212;</h2>
         <p><Link to="/">Head back when you're finished</Link></p>
       </div>
-      <div className="content cols">
+      <div className="content cols" style={{ paddingTop: '0' }}>
         <div className="col">
           <div className="logo-container">
             <img src={animation} alt="Campfire Firm" />

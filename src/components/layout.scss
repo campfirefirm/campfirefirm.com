@@ -3,6 +3,16 @@ $heading: "Roboto Slab", sans-serif;
 
 @import './style/main.scss';
 
+#banner {
+  transition: 0.3s all;
+
+  &.hide {
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -180,4 +190,8 @@ section {
 
 img.shadow {
   border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  padding-bottom: 1rem;
 }

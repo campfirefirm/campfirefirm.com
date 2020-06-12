@@ -57,10 +57,10 @@ const IndexPage = () => {
     </section>
 
     <section style={{ 
-      background: `#EEE`, 
+      // background: `#EEE`, 
       backgroundPositionY: "0%", 
       maxHeight: '100px',
-      color: '#233C96', 
+      // color: '#233C96', 
       paddingTop: '6rem',
     }}>
       <div className="content" style={{
@@ -72,10 +72,10 @@ const IndexPage = () => {
     </section>
 
     <section style={{ 
-      background: `url(${design}) #EEE`, 
+      background: `url(${design}) #fff`, 
       backgroundPositionY: "0%",
-      minHeight: '500px', 
-      color: '#201C4D', 
+      minHeight: '600px', 
+      // color: '#201C4D', 
       backgroundRepeat: 'no-repeat', 
       backgroundSize: 'contain',
       backgroundPosition: '50% 50%',

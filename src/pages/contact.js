@@ -26,6 +26,9 @@ const ContactPage = () => {
           <iframe title="contact" src="https://docs.google.com/forms/d/e/1FAIpQLSciY_K3LjsIaY1Csi8lKRmvR7UTTB5SbGPIlImuP7laptPb6Q/viewform?embedded=true" width="640" height="682" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
       </div>
+      <footer>
+        &copy; {new Date().getFullYear()} Campfire Firm LLC
+      </footer>
     </section>
 
   </Layout>

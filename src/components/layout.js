@@ -34,10 +34,7 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            &copy; {new Date().getFullYear()} Campfire Firm LLC
-          </footer>
-        </div>
+       </div>
       </>
     )}
   />

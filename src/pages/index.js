@@ -7,7 +7,6 @@ import animation from "../images/animationlb.gif"
 import contours from "../images/contours.png"
 import bg2 from "../images/bg2.jpg"
 import bg3 from "../images/bg3.jpg"
-import design from "../images/design.png"
 import tomclimate from "../images/tom-climate.gif"
 import sugarscroll from "../images/sugar-scroll.jpg"
 import sugarex from "../images/sugar-expand.jpg"
@@ -56,36 +55,6 @@ const IndexPage = () => {
       </div>
     </section>
 
-    <section style={{ 
-      // background: `#EEE`, 
-      backgroundPositionY: "0%", 
-      maxHeight: '100px',
-      // color: '#233C96', 
-      paddingTop: '6rem',
-    }}>
-      <div className="content" style={{
-        margin: '0',
-        padding: '0',
-      }}>
-        <h2>&#8212; Design &#8212;</h2>
-      </div>
-    </section>
-
-    <section style={{ 
-      background: `url(${design}) #fff`, 
-      backgroundPositionY: "0%",
-      minHeight: '600px', 
-      // color: '#201C4D', 
-      backgroundRepeat: 'no-repeat', 
-      backgroundSize: 'contain',
-      backgroundPosition: '50% 50%',
-      paddingTop: '0',
-      alignItems: 'flex-start',
-    }}>
-      <div className="content" />
-    </section>
-
-
     <section style={{
       backgroundImage: `url(${bg2})`,
       backgroundPositionY: "50%",
@@ -93,7 +62,7 @@ const IndexPage = () => {
     }}>
     {/* <section style={{ paddingTop: '2rem', background: `#FFF`, paddingBottom: '6rem' }}>  */}
       <div className="content">
-        <h2>&#8212; Web Development &#8212;</h2>
+        <h2>&#8212; Web Development and Design &#8212;</h2>
         <div style={{ position: 'relative', zIndex: 0, width: '100%', marginTop: '1rem' }}>
           <img className="shadow"
             src={tomclimate} alt="TS2020 website"
@@ -139,6 +108,9 @@ const IndexPage = () => {
         <h2>&#8212; Reach out to us! &#8212;</h2>
         <p><Link style={{ color: '#fff' }} to={`contact`}>Contact us today</Link></p>
       </div>
+      <footer>
+        &copy; {new Date().getFullYear()} Campfire Firm LLC
+      </footer>
     </section>
 
 

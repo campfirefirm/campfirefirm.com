@@ -31,7 +31,7 @@ module.exports = {
         background_color: `#5A8C70`,
         theme_color: `#5A8C70`,
         display: `minimal-ui`,
-        icon: `src/images/campicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logos/campicon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -46,12 +46,20 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Halant', 'Roboto Slab']
+          families: ['Heebo:100,400,900', 'Roboto Slab']
         }
       }
     },
     {
       resolve: `gatsby-plugin-sass`,
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

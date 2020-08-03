@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import animation from "../images/animationl.gif"
+import animation from "../images/logos/animationl.gif"
 import contours from "../images/contours.png"
 import { Link } from 'gatsby'
 

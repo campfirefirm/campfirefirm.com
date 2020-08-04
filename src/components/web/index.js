@@ -9,13 +9,8 @@ import flow from './img/flow.svg'
 import './web.scss';
 
 const Web = () => (
-  <section
-    id="web"
-  >
-    <h2 style={{
-      color: '#323236',
-    }}
-    >Web Development</h2>
+  <section id="web">
+    <h2>Web Development</h2>
 
     <img id="web-flow" src={flow} alt="flow chart" />
 

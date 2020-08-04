@@ -8,6 +8,7 @@
     z-index: 999;
     font-weight: 900;
     font-size: 2rem;
+    color: #323236;
 
     @media (min-width: 767px) {
       font-size: 3rem;
@@ -26,7 +27,7 @@
   .site {
     display: block;
     border-radius: 10px;
-    border: 10px solid white;
+    border: 10px solid #F5F5F9;
     width: 80%;
     margin-bottom: 2rem;
   }
@@ -39,7 +40,7 @@
     transform: rotateZ(-26deg) rotateY(45deg) rotateX(-35deg) translateY(-50%);
     background: #F5F5F9;
     padding: 2rem;
-    border-radius: 40px;
+    border-radius: 30px;
   }
 
   #web-laptop {

@@ -1,0 +1,48 @@
+#web {
+  height: 150vh;
+  width: 100vw;
+  background-color: #D0ABF5;
+  padding: 5rem 0;
+
+  h2 {
+    z-index: 999;
+    font-weight: 900;
+    font-size: 2rem;
+
+    @media (min-width: 767px) {
+      font-size: 3rem;
+    }
+  }
+
+  .sites {
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    right: -20%;
+    top: 0%;
+    transform: rotateZ(-28deg) rotateY(45deg) rotateX(45deg);
+  }
+
+  .site {
+    display: block;
+    border-radius: 10px;
+    border: 10px solid white;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  #web-flow {
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    width: 50%;
+    transform: rotateZ(-26deg) rotateY(45deg) rotateX(-35deg) translateY(-50%);
+    background: #F5F5F9;
+    padding: 2rem;
+    border-radius: 40px;
+  }
+
+  #web-laptop {
+    z-index: 99;
+  }
+}

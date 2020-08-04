@@ -5,12 +5,46 @@ $heading: "Heebo", sans-serif;
 
 @keyframes bounce {
   0%   { transform: scale(1,1)      translateY(0); }
-  5%  { transform: scale(1.1,.9)   translateY(0); }
-  10%  { transform: scale(.9,1.1)   translateY(-15px); }
-  15%  { transform: scale(1.05,.95) translateY(0); }
-  20%  { transform: scale(1,1)      translateY(-7px); }
-  30%  { transform: scale(1,1)      translateY(0); }
+  70%  { transform: scale(1.1,.9)   translateY(0); }
+  75%  { transform: scale(.9,1.1)   translateY(-15px); }
+  80%  { transform: scale(1.05,.95) translateY(0); }
+  85%  { transform: scale(1,1)      translateY(-7px); }
+  95%  { transform: scale(1,1)      translateY(0); }
   100% { transform: scale(1,1)      translateY(0); }
+}
+
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  // background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background: linear-gradient(60deg, #F2A45C, #F16950, #D47966, #EBDC8E);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #arrow {
@@ -19,7 +53,9 @@ $heading: "Heebo", sans-serif;
   bottom: -40px;
   left: 50%;
   opacity: 0.3;
+  transform: translateX(-50%);
 
+  animation-delay: 2s;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-name: bounce;
@@ -33,6 +69,23 @@ $heading: "Heebo", sans-serif;
     height: 0;
     padding: 0;
     margin: 0;
+  }
+}
+
+header {
+  .nav {
+    font-size: 1.5rem;
+    opacity: 0.5;
+
+    a {
+      text-shadow: 1px 1px 3px rgba(0,0,0, 0.6);
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0 1rem;
+      font-weight: 600;
+      font-variation-settings: 'wght' 600;
+    }
   }
 }
 
@@ -69,6 +122,8 @@ $heading: "Heebo", sans-serif;
 body {
   overflow-x: hidden;
 }
+
+* { scroll-behavior: smooth; }
 
 h1, h2, h3, h4 {
   font-family: $heading;
@@ -107,6 +162,7 @@ section {
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 400;
+  padding: 0 1rem;
 
   .br {
     display: block;
@@ -174,7 +230,7 @@ section {
 #storytelling {
   h2 {
     // color: rgba(69, 166, 234, 1);
-    color: #ddd;
+    color: #F5F5F9;
     font-weight: 900;
     font-size: 2.2rem;
 

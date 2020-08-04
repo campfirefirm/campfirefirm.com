@@ -1,0 +1,23 @@
+#design {
+  background-color: #F5F5F9;
+  background-size: 120%;
+  background-position: center center;
+  width: 100vw;
+  height: 200vh;
+
+  h2 {
+    font-weight: 900;
+    font-size: 2.2rem;
+
+    @media (min-width: 767px) {
+      font-size: 4rem;
+    }
+  }
+}
+
+#design-tag {
+  position: absolute;
+  top: -2rem;
+  right: 3rem;
+  width: 25vw;
+}

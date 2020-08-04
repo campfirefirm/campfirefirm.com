@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-// import Header from "./header"
+import Header from "./header"
 import "./layout.scss"
 
 const Layout = ({ children }) => (
@@ -25,12 +25,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,
             maxWidth: '100%',
-            paddingTop: 0,
           }}
         >
           <main>{children}</main>

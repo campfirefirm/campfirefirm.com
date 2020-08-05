@@ -36,6 +36,16 @@ const Scroller = () => {
         }
       );
 
+      gsap.to('#top .nav',
+        {
+          scrollTrigger: {
+            scrub: true,
+            end: 'top+=1000px',
+          },
+          marginTop: '-100px',
+        }
+      );
+
       /**
        * DESIGN ========================
        */

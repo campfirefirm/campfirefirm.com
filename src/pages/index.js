@@ -19,7 +19,7 @@ const IndexPage = () => {
   const ssr = typeof window === `undefined`;
 
   return (
-  <Layout showHeader>
+  <Layout>
     <SEO title="Creative Agency" keywords={[
       `marketing`,
       `design`,

@@ -8,7 +8,6 @@ import './styles.scss'
 
 const Top = () => (
   <section id="top">
-
     <div className="scroller"
       id="top-mountains"
       data-speed={-0.9}
@@ -42,6 +41,10 @@ const Top = () => (
       }}
     >
       <div className="black-after"></div>
+    </div>
+
+    <div className="nav">
+      <a href="#video">Video</a> | <a href="#design">Design</a> | <a href="#web">Web</a>
     </div>
 
   </section>

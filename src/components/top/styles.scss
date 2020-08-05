@@ -5,6 +5,31 @@
   overflow-y: hidden;
   background: #000;
   justify-content: flex-start;
+
+  .nav {
+    font-size: 1rem;
+    opacity: 0.5;
+    position: fixed;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    height: 100vh;
+
+    @media (min-width: 480px) {
+      font-size: 1.5rem;
+    }
+
+    a {
+      text-shadow: 1px 1px 3px rgba(0,0,0, 0.6);
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0 1rem;
+      font-weight: 600;
+      font-variation-settings: 'wght' 600;
+    }
+  }
 }
 
 #top-mountains {
@@ -85,4 +110,5 @@
   position: absolute;
   top: 100%;
   left: 0;
+  overflow: hidden;
 }

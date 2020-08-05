@@ -90,7 +90,6 @@
 #design-stationary {
   position: absolute;
   min-width: 700px;
-  max-width: 1440px;
   transform: translateY(-50%) translateX(-50%);
   top: 50%;
   left: 50%;
@@ -101,6 +100,7 @@
 
   @media (min-width: 1440px) {
     min-width: 50%;
+    max-width: 1440px;
   }
 }
 

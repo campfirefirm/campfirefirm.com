@@ -101,6 +101,7 @@ header {
 
 body {
   overflow-x: hidden;
+  overscroll-behavior-y: contain;
 }
 
 * { scroll-behavior: smooth; }

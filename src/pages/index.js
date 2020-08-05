@@ -11,7 +11,7 @@ import { Link } from 'gatsby'
 // sections
 import Top from '../components/top'
 import Storytelling from '../components/storytelling'
-import Video from '../components/Video'
+import Video from '../components/video'
 import Design from '../components/design'
 import Web from '../components/web'
 

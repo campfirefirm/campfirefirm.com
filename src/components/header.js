@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
         padding: `1rem`,
       }}
     >
-      <a href="#design">Design</a> | <a href="#video">Video</a> | <a href="#web">Web</a>
+      <a href="#video">Video</a> | <a href="#design">Design</a> | <a href="#web">Web</a>
     </div>
   </header>
 )

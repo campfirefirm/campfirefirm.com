@@ -1,16 +1,9 @@
 import React from 'react'
 import fire from '../../images/logos/animationb.gif'
+import './styles.scss'
 
 const Storytelling = () => (
-  <section
-    id="storytelling"
-    style={{
-      background: '#000',
-      zIndex: 1,
-      height: '100vh',
-      paddingBottom: '3rem',
-      justifyContent: 'flex-end',
-    }}>
+  <section id="storytelling">
     <div className="content cols">
       <div className="col" style={{ zIndex: 1 }}>
         <h2>We’ll tell your story</h2>
@@ -18,17 +11,7 @@ const Storytelling = () => (
         <p className="text">Unsure where to start?</p>
         <p>
           <a
-            className="gradient-border"
-            style={{
-              color: '#fff',
-              // background: '#6aa684',
-              textShadow: '0px 1px 5px rgba(0,0,0, 0.6)',
-              background: 'transparent',
-              borderRadius: '5px',
-              textDecoration: 'none',
-              padding: '0.5rem 1rem',
-              fontWeight: 900,
-            }}
+            className="gradient-border btn"
             href={`mailto:hello@campfirefirm.com?subject=Looking for help`}
           >Let’s chat!</a>
         </p>

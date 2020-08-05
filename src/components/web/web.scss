@@ -1,8 +1,12 @@
 #web {
-  height: 150vh;
   width: 100vw;
-  background-color: #D0ABF5;
+  background: #D0ABF5;
+  background: linear-gradient(-35deg, #ACD6F5, #D0ABF5);
   padding: 5rem 0;
+
+  @media (min-width: 768px) {
+    min-height: 150vh;
+  }
 
   h2 {
     z-index: 999;
@@ -10,17 +14,32 @@
     font-size: 2rem;
     color: #323236;
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       font-size: 3rem;
     }
   }
 
-  .sites {
+  .sites-container {
     position: absolute;
-    height: 100vh;
-    width: 50%;
-    right: -20%;
-    top: 0%;
+    min-height: 100vh;
+    width: 60%;
+    right: -40%;
+    top: 10%;
+
+    @media (min-width: 768px) {
+      right: -10%;
+      width: 50%;
+      top: 10%;
+    }
+
+    @media (min-width: 960px) {
+      right: -10%;
+      width: 40%;
+      top: 0;
+    }
+  }
+
+  .sites {
     transform: rotateZ(-28deg) rotateY(45deg) rotateX(45deg);
   }
 
@@ -32,15 +51,23 @@
     margin-bottom: 2rem;
   }
 
+  .content {
+    color: #323236;
+  }
+
   #web-flow {
     position: absolute;
     top: 50%;
     left: -15%;
     width: 50%;
-    transform: rotateZ(-26deg) rotateY(45deg) rotateX(-35deg) translateY(-50%);
     background: #F5F5F9;
     padding: 2rem;
     border-radius: 30px;
+    transform: rotateZ(-26deg) rotateY(45deg) rotateX(-35deg) translateY(-50%) translateX(-10%);
+
+    @media (min-width: 768px) {
+      transform: rotateZ(-26deg) rotateY(45deg) rotateX(-35deg) translateY(-50%);
+    }
   }
 
   #web-laptop {

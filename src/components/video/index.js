@@ -46,7 +46,7 @@ const Video = () => (
     <div className="content cols">
       <div className="col">
         <p>With over a decade of production experience Campfire is ready to help you promote your product, campaign, or cause. From script to final video - we’ll be with you every step of the way.</p>
-        <p>Let’s get started on your video today!</p>
+        <p><b>Let’s get started on your video today!</b></p>
       </div>
       <div className="col">
         <p>We have experience with:</p>

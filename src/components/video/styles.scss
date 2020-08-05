@@ -20,6 +20,14 @@
     padding-top: 0;
   }
 
+  .content.top {
+    padding-bottom: 0;
+
+    @media (min-width: 768px) {
+      padding-bottom: 4rem;
+    }
+  }
+
   .video {
     position: relative;
     overflow: hidden;

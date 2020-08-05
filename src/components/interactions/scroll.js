@@ -55,7 +55,7 @@ const Scroller = () => {
       //       scrub: true,
       //       start: "top top",
       //       end: "center center",
-      //       pint: "#web",
+      //       pin: "#web",
       //     },
       //     marginRight: '-10%',
       //   }
@@ -65,13 +65,24 @@ const Scroller = () => {
        * VIDEO ========================
        */
 
-      ScrollTrigger.create({
-        trigger: "#video-container",
-        start: "top top",
-        end: "bottom bottom",
-        // end: "bottom top",
-        pin: ".video-wrapper",
-      });
+      gsap.from('#video .video',
+        {
+          scrollTrigger: {
+            scrub: true,
+            trigger: '#video .video',
+            end: "top center",
+          },
+          transform: 'scale(0.9)',
+        }
+      );
+
+      // ScrollTrigger.create({
+      //   trigger: "#video",
+      //   // start: "top top",
+      //   // end: "bottom bottom",
+      //   // end: "bottom top",
+      //   pin: ".video-wrapper",
+      // });
     }
   }, []);
 

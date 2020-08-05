@@ -27,6 +27,15 @@ const Scroller = () => {
         }
       );
 
+      gsap.to('#arrow',
+        {
+          scrollTrigger: {
+            scrub: true,
+          },
+          marginBottom: '-100%',
+        }
+      );
+
       /**
        * DESIGN ========================
        */

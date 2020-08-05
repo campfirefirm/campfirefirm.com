@@ -9,6 +9,10 @@
   @media (min-width: 480px) {
     min-height: 100vw;
   }
+  @media (min-width: 1440px) {
+    max-height: 120vh;
+    min-height: 120vh;
+  }
 
   &::before {
     content: '';
@@ -86,6 +90,7 @@
 #design-stationary {
   position: absolute;
   min-width: 700px;
+  max-width: 1440px;
   transform: translateY(-50%) translateX(-50%);
   top: 50%;
   left: 50%;
@@ -94,8 +99,8 @@
     min-width: 120%;
   }
 
-  @media (min-width: 980px) {
-    max-width: 1200px;
+  @media (min-width: 1440px) {
+    min-width: 50%;
   }
 }
 

@@ -11,7 +11,9 @@ const Web = () => (
   <section id="web">
     <h2>Web Development</h2>
 
-    <img id="web-flow" className="shadow" src={flow} alt="flow chart" />
+    <div className="web-flow-container">
+      <img id="web-flow" className="shadow" src={flow} alt="flow chart" />
+    </div>
     <img id="web-laptop" src={laptop} alt="laptop" />
 
     <div className="sites-container">

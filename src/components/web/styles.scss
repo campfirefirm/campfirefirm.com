@@ -23,6 +23,7 @@
     position: absolute;
     min-height: 100vh;
     width: 60%;
+    max-width: 800px;
     right: -40%;
     top: 10%;
 
@@ -56,19 +57,20 @@
     padding: 1rem;
   }
 
-  #web-flow {
+  .web-flow-container {
     position: absolute;
     top: 50%;
-    left: -15%;
+    left: 50%;
+    transform: translate(-135%, -50%);
     width: 50%;
+    max-width: 1000px;
+  }
+
+  #web-flow {
     background: #F5F5F9;
     padding: 2rem;
     border-radius: 30px;
-    transform: rotateZ(-26deg) rotateY(45deg) rotateX(-35deg) translateY(-50%) translateX(-10%);
-
-    @media (min-width: 768px) {
-      transform: rotateZ(-26deg) rotateY(45deg) rotateX(-35deg) translateY(-50%);
-    }
+    transform: rotateZ(-26deg) rotateY(45deg) rotateX(-35deg);
   }
 
   #web-laptop {

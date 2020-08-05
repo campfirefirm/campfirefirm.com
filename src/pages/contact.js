@@ -5,13 +5,13 @@ import SEO from "../components/seo"
 import animation from "../images/logos/animationl.gif"
 import contours from "../images/contours.png"
 import { Link } from 'gatsby'
+import '../components/style/contact.scss';
 
 const ContactPage = () => {
   return (
   <Layout>
     <SEO title="Campfire Firm LLC Contact" keywords={[`marketing`, `design`, `development`, `videography`, `cro`, `analytics`, `progressive`]} />
-    <section id="section-1" style={{ backgroundImage: `url(${contours})`, backgroundPositionY: "50%", paddingTop: '2rem' }}>
-      
+    <section style={{ backgroundImage: `url(${contours})`, backgroundPositionY: "50%", paddingTop: '2rem' }}>
       <div className="content" style={{ paddingBottom: '0' }}>
         <h2>&#8212; Reach out to us! &#8212;</h2>
         <p><Link to="/">Head back when you're finished</Link></p>

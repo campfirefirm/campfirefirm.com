@@ -31,35 +31,33 @@ const Scroller = () => {
        * DESIGN ========================
        */
 
-      // tag
-      gsap.from('#design-tag',
-        {
-          scrollTrigger: {
-            scrub: true,
-            start: "top top",
-            end: "center center",
-          },
-          marginTop: '-4rem',
-        }
-      );
-
 
       /**
        * WEB ========================
        */
 
-      // // tag
-      // gsap.from('#web .sites',
-      //   {
-      //     scrollTrigger: {
-      //       scrub: true,
-      //       start: "top top",
-      //       end: "center center",
-      //       pin: "#web",
-      //     },
-      //     marginRight: '-10%',
-      //   }
-      // );
+      gsap.from('#web-flow',
+        {
+          scrollTrigger: {
+            scrub: true,
+            trigger: '#web-flow',
+            end: "top 30%",
+          },
+          transform: 'translate(-150%, -50%)',
+        }
+      );
+
+      gsap.from('#web .sites-container',
+        {
+          scrollTrigger: {
+            scrub: true,
+            trigger: '#web .sites-container',
+            end: "top 20%",
+          },
+          right: '-45%',
+          top: '-10%',
+        }
+      );
 
       /**
        * VIDEO ========================
@@ -76,13 +74,6 @@ const Scroller = () => {
         }
       );
 
-      // ScrollTrigger.create({
-      //   trigger: "#video",
-      //   // start: "top top",
-      //   // end: "bottom bottom",
-      //   // end: "bottom top",
-      //   pin: ".video-wrapper",
-      // });
     }
   }, []);
 

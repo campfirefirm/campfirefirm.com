@@ -1,5 +1,51 @@
 #video {
-  background: linear-gradient(-15deg, rgba(241,105,80,1) 0%, rgba(242,164,92,1) 49%, rgba(241,105,80,1) 100%);
+  // background: linear-gradient(-15deg, rgba(241,105,80,1) 0%, rgba(242,164,92,1) 49%, rgba(241,105,80,1) 100%);
+  background: linear-gradient(-15deg, rgba(164, 126, 112, 1) 0%, rgba(212, 121, 102, 1) 50%, rgba(164, 126, 112, 1) 100%);
   min-height: 100vh;
   height: 100%;
+
+  color: #F5F5F9;
+
+  h2 {
+    font-weight: 900;
+    font-size: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+
+  .content.cols {
+    align-items: flex-start;
+    padding-top: 0;
+  }
+
+  .video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    width: 100%;
+    min-width: 550px;
+    margin-bottom: 2rem;
+  
+    @media (max-width: 550px) {
+      min-width: 320px;
+    }
+  
+    img,
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  ul {
+    margin-left: 2rem;
+  }
 }

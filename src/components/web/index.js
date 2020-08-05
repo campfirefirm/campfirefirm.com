@@ -5,7 +5,7 @@ import tomclimate from './img/tom-climate.gif'
 import sugarscroll from './img/sugar-scroll.jpg'
 import sugarex from './img/sugar-expand.jpg'
 import flow from './img/flow.svg'
-import './web.scss';
+import './styles.scss';
 
 const Web = () => (
   <section id="web">

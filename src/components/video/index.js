@@ -37,10 +37,28 @@ const Video = () => (
   // </section>
 
   <section id="video">
-    <div className="content">
-      <h2 style={{ color: '#F5F5F9' }}>Video</h2>
+    <div className="content top">
+      <h2>Video</h2>
       <div className="video shadow">
         <iframe title="video" width="560" height="315" src="https://www.youtube.com/embed/bVBWmBj1fQo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      </div>
+    </div>
+    <div className="content cols">
+      <div className="col">
+        <p>With over a decade of production experience Campfire is ready to help you promote your product, campaign, or cause. From script to final video - we’ll be with you every step of the way.</p>
+        <p>Let’s get started on your video today!</p>
+      </div>
+      <div className="col">
+        <p>We have experience with:</p>
+        <ul>
+          <li>Policy rollouts</li>
+          <li>Candidate campaigns</li>
+          <li>Ballot measures</li>
+          <li>Animated videos</li>
+          <li>Digital ads</li>
+          <li>Live Streams</li>
+          <li>And more... </li>
+        </ul>
       </div>
     </div>
   </section>

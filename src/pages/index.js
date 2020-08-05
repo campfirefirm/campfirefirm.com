@@ -1,11 +1,8 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// import animation from "../images/fire.png" // https://unsplash.com/photos/DUXACn8tgp4
 import bg3 from "../images/bg3.jpg"
-// import cf from "../images/logos/campfirefirm.svg"
 import { Link } from 'gatsby'
 
 // sections
@@ -15,20 +12,23 @@ import Video from '../components/video'
 import Design from '../components/design'
 import Web from '../components/web'
 
-const Keys = React.lazy(() =>
-  import('../components/interactions/keys')
-);
-
-const Scroller = React.lazy(() => 
-  import('../components/interactions/scroll')
-);
+const Keys = React.lazy(() => import('../components/interactions/keys'));
+const Scroller = React.lazy(() => import('../components/interactions/scroll'));
 
 const IndexPage = () => {
   const ssr = typeof window === `undefined`;
 
   return (
   <Layout>
-    <SEO title="Creative Agency" keywords={[`marketing`, `design`, `development`, `videography`, `cro`, `analytics`, `progressive`]} />
+    <SEO title="Creative Agency" keywords={[
+      `marketing`,
+      `design`,
+      `development`,
+      `videography`,
+      `cro`,
+      `analytics`,
+      `progressive`
+    ]} />
 
     {!ssr && (
       <React.Suspense fallback={<div />}>
@@ -49,45 +49,22 @@ const IndexPage = () => {
     <Design />
     <Web />
 
-    {/* <section style={{ background: '#598C6E', color: '#fff' }}> */}
     <section>
       <div className="content">
-        <h2>&#8212; About us &#8212;</h2>
+        <h2>About us</h2>
         <p>We named our studio Campfire because our company culture extends to our working relationships - the feeling of friends around a campfire brainstorming, laughing and developing the best ideas in this neck of the woods.</p>
       </div>
     </section>
 
-
     <section style={{ backgroundImage: `url(${bg3})`, backgroundPositionY: "50%", color: "#fff" }}>
-    {/* <section style={{ backgroundImage: `url(${contours})`, backgroundPositionY: "50%" }}> */}
       <div className="content">
-        <h2>&#8212; Reach out to us! &#8212;</h2>
-        <p><Link style={{ color: '#fff' }} to={`contact`}>Contact us today</Link></p>
+        <h2>Reach out to us!</h2>
+        <p><Link className="gradient-border btn" to={`contact`}>Contact us today</Link></p>
       </div>
       <footer>
         &copy; {new Date().getFullYear()} Campfire Firm LLC
       </footer>
     </section>
-
-
-    {/* <section style={{ backgroundColor: '#E4FAED' }}>
-      <div className="content cols">
-        <div className="col profile">
-          <FontAwesomeIcon icon={faPencilRuler} size={'4x'} color={'#669F7F'} />
-          <p style={{ marginTop: '20px', fontWeight: 'bold' }}>Design</p>
-        </div>
-        <div className="col profile">
-          <FontAwesomeIcon icon={faYoutube} size={'4x'} color={'#669F7F'} />
-          <p style={{ marginTop: '20px', fontWeight: 'bold' }}>Video Production</p>
-        </div>
-        <div className="col profile">
-          <FontAwesomeIcon icon={faCode} size={'4x'} color={'#669F7F'} />
-          <p style={{ marginTop: '20px', fontWeight: 'bold' }}>Web Development</p>
-        </div>
-      </div>
-    </section> */}
-
-
 
   </Layout>
 )};

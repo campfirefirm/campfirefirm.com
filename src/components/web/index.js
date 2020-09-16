@@ -12,20 +12,23 @@ const Web = () => (
     <h2>Web Development</h2>
 
     <div className="web-flow-container">
-      <img id="web-flow" className="shadow" src={flow} alt="flow chart" />
+      <img id="web-flow" className="shadow" src={flow} alt="flow chart" loading="lazy" />
     </div>
-    <img id="web-laptop" src={laptop} alt="laptop" />
+    <img id="web-laptop" src={laptop} alt="laptop" loading="lazy" />
 
     <div className="sites-container">
       <div className="sites">
         <img className="site shadow"
           src={tomclimate} alt="TS2020 website"
+          loading="lazy"
         />
         <img className="site shadow"
           src={sugarscroll} alt="SugarCRM"
+          loading="lazy"
         />
         <img className="site shadow"
           src={sugarex} alt="SugarCRM"
+          loading="lazy"
         />
       </div>
     </div>

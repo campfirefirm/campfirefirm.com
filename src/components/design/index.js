@@ -14,7 +14,7 @@ const Design = () => (
       backgroundRepeat: 'repeat',
     }}
   >
-    <img id="design-stationary" src={stationary} alt="stationary" />
+    <img id="design-stationary" src={stationary} alt="stationary" loading="lazy" />
     <h2>Design</h2>
     <ul>
       <li>Ads</li>

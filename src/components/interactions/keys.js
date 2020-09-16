@@ -19,6 +19,7 @@ const Keys = () => {
 
               document.body.style.fontFamily = 'VT323';
               const els = document.querySelectorAll('*');
+              if (!els || els.length === 0) return;
               els.forEach((e) => e.style.fontFamily = 'VT323');
             }
           };

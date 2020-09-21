@@ -38,25 +38,25 @@ const Video = () => {
               <button onClick={ () => setId('456286137') }>Climate policy</button>
             </li>
             <li>
-              <button onClick={ () => setId('283818650/e7f7aaa9f1') }>Candidate campaigns</button>
+              <button onClick={ () => setId('283818650') }>Candidate campaigns</button>
             </li>
             <li>
               <button onClick={ () => setId('199230971') }>Broadcast TV ads</button>
             </li>
             <li>
-              <button onClick={ () => setId('372215739/4a0851b86a') }>Local ballot measures</button>
+              <button onClick={ () => setId('372215739') }>Local ballot measures</button>
             </li>
             <li>
               <button onClick={ () => setId('219768695') }>Animated videos</button>
             </li>
             <li>
-              <button onClick={ () => setId('456292098/af2715d8a7') }>Digital ads</button>
+              <button onClick={ () => setId('456292098') }>Digital ads</button>
             </li>
             <li>
               <button onClick={ () => setId('380062204') }>Live streams</button>
             </li>
             <li>
-              <button onClick={ () => setId('381715174/fe0c564563') }>And more...</button>
+              <button onClick={ () => setId('381715174') }>And more...</button>
             </li>
           </ul>
         </div>

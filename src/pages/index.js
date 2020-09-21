@@ -50,7 +50,7 @@ const IndexPage = () => {
     <Web />
 
     <section>
-      <div className="content">
+      <div className="content" style={{ padding: '10rem 0' }}>
         <h2>About us</h2>
         <p>We named our studio Campfire because our company culture extends to our working relationships - the feeling of friends around a campfire brainstorming, laughing and developing the best ideas in this neck of the woods.</p>
       </div>

@@ -1,6 +1,24 @@
 import React, { useState } from 'react'
 import './styles.scss'
 import ModalVideo from 'react-modal-video'
+import styled from 'styled-components'
+
+const Button = styled.button`
+  border-radius: 5px;
+  color: #EEE;
+  background-color: #3067A6;  // #F36850
+  // border: 2px solid #AED3F4;
+  border: none;
+  padding: 8px 12px;
+
+  animate: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #408ADE; // #EA513C
+    border-color: #ddd;
+  }
+`;
 
 const Video = () => {
   const [open, setOpen] = useState(false);
@@ -32,31 +50,31 @@ const Video = () => {
           <p><b>Let’s start creating your video today!</b></p>
         </div>
         <div className="col">
-          <p>We have experience with:</p>
+          <p>Check out these examples:</p>
           <ul>
             <li>
-              <button onClick={ () => setId('456286137') }>Climate policy</button>
+              <Button onClick={ () => setId('456286137') }>Climate policy</Button>
             </li>
             <li>
-              <button onClick={ () => setId('283818650') }>Candidate campaigns</button>
+              <Button onClick={ () => setId('283818650') }>Candidate campaigns</Button>
             </li>
             <li>
-              <button onClick={ () => setId('199230971') }>Broadcast TV ads</button>
+              <Button onClick={ () => setId('199230971') }>Broadcast TV ads</Button>
             </li>
             <li>
-              <button onClick={ () => setId('372215739') }>Local ballot measures</button>
+              <Button onClick={ () => setId('372215739') }>Local ballot measures</Button>
             </li>
             <li>
-              <button onClick={ () => setId('219768695') }>Animated videos</button>
+              <Button onClick={ () => setId('219768695') }>Animated videos</Button>
             </li>
             <li>
-              <button onClick={ () => setId('456292098') }>Digital ads</button>
+              <Button onClick={ () => setId('456292098') }>Digital ads</Button>
             </li>
             <li>
-              <button onClick={ () => setId('380062204') }>Live streams</button>
+              <Button onClick={ () => setId('380062204') }>Live streams</Button>
             </li>
             <li>
-              <button onClick={ () => setId('381715174') }>And more...</button>
+              <Button onClick={ () => setId('381715174') }>And more...</Button>
             </li>
           </ul>
         </div>

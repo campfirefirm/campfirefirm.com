@@ -1,3 +1,5 @@
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
 #video {
   // background: linear-gradient(-15deg, rgba(241,105,80,1) 0%, rgba(242,164,92,1) 49%, rgba(241,105,80,1) 100%);
   background: linear-gradient(-15deg, rgba(164, 126, 112, 1) 0%, rgba(212, 121, 102, 1) 50%, rgba(164, 126, 112, 1) 100%);
@@ -27,6 +29,10 @@
       padding-bottom: 4rem;
     }
   }
+
+  // .modal-video {
+  //   z-index: 999;
+  // }
 
   .video {
     position: relative;

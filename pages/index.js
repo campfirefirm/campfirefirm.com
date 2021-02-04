@@ -23,13 +23,19 @@ export default function Home() {
           ></iframe>
         </div>
 
-        <Image
+        <img
+          className={styles.logoImg}
+          src="/animation.gif"
+          alt="logo"
+        />
+
+        {/* <Image
           className={styles.logoImg}
           src="/animation.gif"
           alt="logo"
           width={400}
           height={480}
-        />
+        /> */}
       </div>
 
       <main className={styles.main}>
@@ -52,7 +58,7 @@ export default function Home() {
               <Image
                 src="/innovation.svg"
                 alt="innovation"
-                width={600}
+                width={796}
                 height={600}
               />
             </div>
@@ -70,7 +76,7 @@ export default function Home() {
               <Image
                 src="/Informationflow_Monochromatic.svg"
                 alt="video"
-                width={600}
+                width={796}
                 height={600}
               />
             </div>
@@ -106,7 +112,7 @@ export default function Home() {
               <Image
                 src="/web.svg"
                 alt="web"
-                width={600}
+                width={796}
                 height={600}
               />
             </div>
@@ -122,9 +128,9 @@ export default function Home() {
                 alt="marketing"
               /> */}
               <Image
-                src="/analytics.svg"
+                src="/analytics.png"
                 alt="marketing"
-                width={600}
+                width={796}
                 height={600}
               />
             </div>

@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -23,15 +22,11 @@ export default function Home() {
           ></iframe>
         </div>
 
-        <div className={styles.logoImg}>
-          <Image
-            src="/img/animation.gif"
-            layout="responsive"
+          <img
+            className={styles.logoImg}
+            src="/animation.gif"
             alt="logo"
-            width={425}
-            height={460}
           />
-        </div>
       </div>
 
       <main className={styles.main}>
@@ -47,12 +42,9 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.half}>
-              <Image
-                src="/img/innovation.svg"
-                layout="responsive"
+              <img
+                src="/innovation.svg"
                 alt="innovation"
-                width={600}
-                height={600}
               />
             </div>
           </div>
@@ -62,12 +54,9 @@ export default function Home() {
           <h2 className={styles.title}>Video</h2>
           <div className={styles.content}>
             <div className={styles.half}>
-              <Image
-                src="/img/Informationflow_Monochromatic.svg"
-                layout="responsive"
+              <img
+                src="/Informationflow_Monochromatic.svg"
                 alt="video"
-                width={600}
-                height={600}
               />
             </div>
             <div className={styles.half}>
@@ -95,12 +84,9 @@ export default function Home() {
               <a className="btn" href="#">See our offerings</a>
             </div>
             <div className={styles.half}>
-              <Image
-                src="/img/web.svg"
-                layout="responsive"
+              <img
+                src="/web.svg"
                 alt="web"
-                width={600}
-                height={600}
               />
             </div>
           </div>
@@ -110,12 +96,9 @@ export default function Home() {
           <h2 className={styles.title}>Marketing</h2>
           <div className={styles.content}>
             <div className={styles.half}>
-              <Image
-                src="/img/analytics.svg"
-                layout="responsive"
+              <img
+                src="/analytics.svg"
                 alt="marketing"
-                width={600}
-                height={600}
               />
             </div>
             <div className={styles.half}>

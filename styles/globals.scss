@@ -1,0 +1,53 @@
+:root {
+  --redDark: #CC3F0C;
+  --red: #F26950;
+  --green: #3E5641;
+  --blue: #197278;
+  --white: #FDFFFC;
+  --brown: #6B4B3E;
+  --black: #111119;
+
+  --whiteRGB: 253, 255, 252;
+  --blackRGB: 17, 17, 25;
+  --redRGB: 204, 63, 12;
+}
+
+:root body.darkmode {
+  --white: #111119;
+  --black: #FDFFFC;
+
+  --whiteRGB: 17, 17, 25;
+  --blackRGB: 253, 255, 252;
+  --redDark: #F26950;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background: var(--white);
+  color: var(--black);
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  font-size: 1.2rem;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: inline-block;
+}

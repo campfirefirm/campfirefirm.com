@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -51,16 +51,16 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.half}>
-              {/* <img
+              <img
                 src="/innovation.svg"
                 alt="innovation"
-              /> */}
-              <Image
+              />
+              {/* <Image
                 src="/innovation.svg"
                 alt="innovation"
                 width={796}
                 height={600}
-              />
+              /> */}
             </div>
           </div>
         </section>
@@ -69,16 +69,16 @@ export default function Home() {
           <h2 className={styles.title}>Video</h2>
           <div className={styles.content}>
             <div className={styles.half}>
-              {/* <img
+              <img
                 src="/Informationflow_Monochromatic.svg"
                 alt="video"
-              /> */}
-              <Image
+              />
+              {/* <Image
                 src="/Informationflow_Monochromatic.svg"
                 alt="video"
                 width={796}
                 height={600}
-              />
+              /> */}
             </div>
             <div className={styles.half}>
               <p className={styles.subtitle}>
@@ -105,16 +105,16 @@ export default function Home() {
               <a className="btn" href="#">See our offerings</a>
             </div>
             <div className={styles.half}>
-              {/* <img
+              <img
                 src="/web.svg"
                 alt="web"
-              /> */}
-              <Image
+              />
+              {/* <Image
                 src="/web.svg"
                 alt="web"
                 width={796}
                 height={600}
-              />
+              /> */}
             </div>
           </div>
         </section>
@@ -123,16 +123,16 @@ export default function Home() {
           <h2 className={styles.title}>Marketing</h2>
           <div className={styles.content}>
             <div className={styles.half}>
-              {/* <img
+              <img
                 src="/analytics.svg"
                 alt="marketing"
-              /> */}
-              <Image
+              />
+              {/* <Image
                 src="/analytics.png"
                 alt="marketing"
                 width={796}
                 height={600}
-              />
+              /> */}
             </div>
             <div className={styles.half}>
               <p className={styles.subtitle}>

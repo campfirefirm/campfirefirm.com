@@ -1,12 +1,13 @@
 import styles from './Header.module.scss'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.branding}>
         <div className={styles.logo}>
-          <Image width={100} height={100} src="/img/campsimple.svg" />
+          <img src="/campsimple.svg" alt="logo" />
+          {/* <Image width={100} height={100} src="/img/campsimple.svg" /> */}
         </div>
         <h1 className={styles.title}>Campfire</h1>
       </div>

@@ -31,7 +31,7 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.half}>
               <p className={styles.subtitle}>
-                We’re a full service creative agency.
+                We’re a full service creative agency
               </p>
               <p>
                 With over a decade of production experience Campfire is ready to help you promote your product, campaign, or cause. From script to final video - we’ll be with you every step of the way.
@@ -66,7 +66,7 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.half}>
               <p className={styles.subtitle}>
-                Full-service website development
+                Full-service Website Development
               </p>
               <p>
                 If you need a simple website or help with a complex WordPress or Drupal installation, we can handle it.
@@ -87,7 +87,7 @@ export default function Home() {
             </div>
             <div className={styles.half}>
               <p className={styles.subtitle}>
-                Turnkey Marketing Solution
+                Turnkey Marketing Solutions
               </p>
               <p>
                 We’ll work with you to create a custom full-funnel marketing solution that’s right for your business. We’ll help hone your message, develop the creative, and target the ads.

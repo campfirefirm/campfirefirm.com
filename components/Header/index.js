@@ -1,25 +1,7 @@
 import styles from './Header.module.scss'
-import useDarkMode from 'use-dark-mode'
-import { useEffect } from 'react'
 import Image from 'next/image'
 
 const Header = () => {
-  const darkMode = useDarkMode(false);
-
-  useEffect(() => {
-    const b = document.getElementsByTagName('body')[0];
-
-    if (darkMode.value) {
-      b.classList.add('darkmode');
-    } else {
-      b.classList.remove('darkmode');
-    }
-  }, [darkMode.value]);
-
-  const triggerDark = () => {
-    darkMode.toggle();
-  };
-
   return (
     <header className={styles.header}>
       <div className={styles.branding}>

@@ -1,6 +1,7 @@
 import styles from './Header.module.scss'
 import useDarkMode from 'use-dark-mode'
 import { useEffect } from 'react'
+import Image from 'next/image'
 
 const Header = () => {
   const darkMode = useDarkMode(false);
@@ -22,7 +23,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.branding}>
-        <img className={styles.logo} src="/img/campsimple.svg" />
+        <div className={styles.logo}>
+          <Image width={100} height={100} src="/img/campsimple.svg" />
+        </div>
         <h1 className={styles.title}>Campfire</h1>
       </div>
       <nav className={styles.nav}>
@@ -42,8 +45,9 @@ const Header = () => {
         </ul>
       </nav>
       <div
-        className={styles.darkMode}
-        onClick={triggerDark}>
+        // className={styles.darkMode}
+        // onClick={triggerDark}
+      >
           {/* {darkMode.value ?
             <>🌕</> : <>🌑</>
           } */}

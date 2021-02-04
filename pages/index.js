@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -22,7 +23,15 @@ export default function Home() {
           ></iframe>
         </div>
 
-        <img className={styles.logoImg} src="/img/animation.gif" />
+        <div className={styles.logoImg}>
+          <Image
+            src="/img/animation.gif"
+            layout="responsive"
+            alt="logo"
+            width={425}
+            height={460}
+          />
+        </div>
       </div>
 
       <main className={styles.main}>
@@ -38,7 +47,13 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.half}>
-              <img src="/img/innovation.svg" alt="innovation" />
+              <Image
+                src="/img/innovation.svg"
+                layout="responsive"
+                alt="innovation"
+                width={600}
+                height={600}
+              />
             </div>
           </div>
         </section>
@@ -47,7 +62,13 @@ export default function Home() {
           <h2 className={styles.title}>Video</h2>
           <div className={styles.content}>
             <div className={styles.half}>
-              <img src="/img/Informationflow_Monochromatic.svg" alt="video" />
+              <Image
+                src="/img/Informationflow_Monochromatic.svg"
+                layout="responsive"
+                alt="video"
+                width={600}
+                height={600}
+              />
             </div>
             <div className={styles.half}>
               <p className={styles.subtitle}>
@@ -74,7 +95,13 @@ export default function Home() {
               <a className="btn" href="#">See our offerings</a>
             </div>
             <div className={styles.half}>
-              <img src="/img/web.svg" alt="web" />
+              <Image
+                src="/img/web.svg"
+                layout="responsive"
+                alt="web"
+                width={600}
+                height={600}
+              />
             </div>
           </div>
         </section>
@@ -83,7 +110,13 @@ export default function Home() {
           <h2 className={styles.title}>Marketing</h2>
           <div className={styles.content}>
             <div className={styles.half}>
-              <img src="/img/analytics.svg" alt="marketing" />
+              <Image
+                src="/img/analytics.svg"
+                layout="responsive"
+                alt="marketing"
+                width={600}
+                height={600}
+              />
             </div>
             <div className={styles.half}>
               <p className={styles.subtitle}>

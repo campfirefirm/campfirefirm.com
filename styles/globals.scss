@@ -1,11 +1,14 @@
 :root {
   --redDark: #CC3F0C;
-  --red: #F26950;
-  --green: #3E5641;
-  --blue: #197278;
-  --white: #FDFFFC;
-  --brown: #6B4B3E;
+  --red: #DB222A;
+  --white: #F9F6F0;
   --black: #111119;
+
+  --pink: #F72585;
+  --purple: #7209b7;
+  --blue: #4361EE;
+  --blueLight: #4CC9F0;
+  --blueDark: #3A0CA3;
 
   --whiteRGB: 253, 255, 252;
   --blackRGB: 17, 17, 25;
@@ -31,6 +34,7 @@ body {
   background: var(--white);
   color: var(--black);
   scroll-behavior: smooth;
+  font-weight: 200;
 }
 
 a {

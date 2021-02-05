@@ -1,29 +1,30 @@
 import styles from './Header.module.scss'
-// import Image from 'next/image'
+import Link from 'next/link'
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.branding}>
-        <div className={styles.logo}>
-          <img src="/campsimple.svg" alt="logo" />
-          {/* <Image width={100} height={100} src="/img/campsimple.svg" /> */}
+      <Link href="/">
+        <div className={styles.branding}>
+          {/* <div className={styles.logo}>
+            <img src="/campsimple.svg" alt="logo" />
+          </div> */}
+          <h1 className={styles.title}>Campfire Firm</h1>
         </div>
-        <h1 className={styles.title}>Campfire</h1>
-      </div>
+      </Link>
       <nav className={styles.nav}>
         <ul>
           <li>
-            <a href="#services">Services</a>
+            <a href="/#services">Services</a>
           </li>
           <li>
-            <a href="#work">Work</a>
+            <a href="/#work">Work</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="/#about">About</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="/#contact">Contact</a>
           </li>
         </ul>
       </nav>

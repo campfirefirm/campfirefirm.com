@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import Link from 'next/link'
+import styles from 'styles/Home.module.scss'
 // import Image from 'next/image'
 
 export default function Home() {
@@ -42,25 +43,28 @@ export default function Home() {
         <section id="services">
           <h2 className={styles.title}>Our Services</h2>
           <div className={styles.content}>
-            <div className={styles.half}>
-              <p className={styles.subtitle}>
-                We’re a full service creative agency
-              </p>
-              <p>
-                With over a decade of production experience Campfire is ready to help you promote your product, campaign, or cause. From script to final video - we’ll be with you every step of the way.
-              </p>
+            <p className={styles.subtitle}>
+              We’re a full service creative agency
+            </p>
+            <p>
+              With over a decade of production experience Campfire is ready to help you promote your product, campaign, or cause. From script to final video - we’ll be with you every step of the way.
+            </p>
+          </div>
+          <div className={styles.content}>
+            <div className={styles.third}>
+              <div classname={styles.pink}>
+                <h3>Video</h3>
+              </div>
             </div>
-            <div className={styles.half}>
-              <img
-                src="/innovation.svg"
-                alt="innovation"
-              />
-              {/* <Image
-                src="/innovation.svg"
-                alt="innovation"
-                width={796}
-                height={600}
-              /> */}
+            <div className={styles.third}>
+              <div className={styles.purple}>
+                <h3>Web</h3>
+              </div>
+            </div>
+            <div className={styles.third}>
+              <div classname={styles.blue}>
+                <h3>Marketing</h3>
+              </div>
             </div>
           </div>
         </section>
@@ -87,7 +91,7 @@ export default function Home() {
               <p>
                 Whether you are looking for a commercial, political ad, or industry explainer - we’re ready to help. We’ve done it all and are ready to put our experience to work for you.
               </p>
-              <a className="btn" href="#">See our work</a>
+              <Link href="/video" className="btn">See our work</Link>
             </div>
           </div>
         </section>

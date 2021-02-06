@@ -59,7 +59,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 5rem;
-  color: var(--red);
+  color: var(--black);
 
   @media (max-width: 979px) {
     font-size: calc(5rem * 0.8);
@@ -75,7 +75,7 @@
   line-height: 1;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--blue);
+  color: var(--blueDark);
 
   @media (min-width: 768px) {
     font-size: 3rem;

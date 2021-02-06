@@ -38,7 +38,7 @@
 .mobileSelector {
   display: inline-block;
   margin-left: 2rem;
-  width: 40px;
+  width: 30px;
 
   svg {
     fill: var(--red);
@@ -57,11 +57,11 @@
 }
 
 .branding {
-  width: 22rem;
+  // width: 22rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
 
   &:hover {
     cursor: pointer;
@@ -86,11 +86,11 @@
   font-size: 1.2rem;
   width: 100%;
   position: relative;
+  display: block;
 
   ul {
     padding: 0;
     margin: 0;
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -107,8 +107,14 @@
   @media (max-width: 767px) {
     &[data-showmobile=true] {
       ul {
-        height: 120px;
+        height: 140px;
         max-height: 100%;
+      }
+    }
+
+    li {
+      &:first-of-type {
+        margin-top: 1rem;
       }
     }
   }
@@ -122,14 +128,4 @@
       height: initial;
     }
   }
-}
-
-.darkMode {
-  width: 1rem;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  user-select: none;
 }

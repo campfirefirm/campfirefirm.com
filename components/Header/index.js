@@ -15,7 +15,7 @@ const Header = () => {
           <h1 className={styles.title}>Campfire Firm</h1>
         </Link>
         <div className={styles.mobileSelector} onClick={() => setShowMobile(!showMobile)}>
-          <svg viewBox="0 0 100 80" width="40" height="40">
+          <svg viewBox="0 0 100 80" width="30" height="30">
             <rect width="100" height="20"></rect>
             <rect y="30" width="100" height="20"></rect>
             <rect y="60" width="100" height="20"></rect>
@@ -25,16 +25,16 @@ const Header = () => {
       <nav className={styles.nav} data-showmobile={showMobile}>
         <ul>
           <li>
-            <a href="/#services">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="/#work">Work</a>
+            <a href="#work">Work</a>
           </li>
           <li>
-            <a href="/#about">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="/#contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

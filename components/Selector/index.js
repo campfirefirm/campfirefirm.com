@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 
 export default function Selector({ tags, videos }) {
   const [activeTag, setActiveTag] = useState('all');
+  const [showAll, setShowAll] = useState(false);
   const [watch, setWatch] = useState(null);
   const [visibleVideos, setVisibleVideos] = useState(videos);
 
@@ -25,6 +26,12 @@ export default function Selector({ tags, videos }) {
   }
 
   useEffect(() => {
+    if (visibleVideos.length > 9) {
+      setShowAll(false);
+    }
+  }, [visibleVideos]);
+
+  useEffect(() => {
     window.addEventListener('keydown', (k) => {
       // escape key
       if (k.keyCode === 27) {
@@ -42,8 +49,10 @@ export default function Selector({ tags, videos }) {
       </ul>
 
       <ul className={styles.blocks}>
-        {videos.map( video => 
-          <li key={video.id} data-display={visibleVideos.indexOf(video) >= 0}>
+        {videos.map( (video, i) =>
+          <li key={video.id}
+            data-display={visibleVideos.indexOf(video) >= 0 && (visibleVideos.indexOf(video) < 9 || showAll) }
+          >
             <div className={styles.wrapper}>
               <div className={styles.clickInterceptor} onClick={() => setWatch(video.id)}></div>
               <iframe
@@ -62,6 +71,12 @@ export default function Selector({ tags, videos }) {
         )}
         <li key={'extra'}></li>
       </ul>
+
+      { !showAll && (visibleVideos.length > 9) && (
+        <div className={styles.actionsContainer}>
+          <div className={styles.showAll} onClick={() => setShowAll(true)}>Show All</div>
+        </div>
+      )}
 
       { watch && (
         <div className={styles.modal} onClick={() => setWatch(null) }>

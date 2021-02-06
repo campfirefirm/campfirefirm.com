@@ -24,7 +24,8 @@ export default function Video() {
         <div className={styles.overlay}></div>
         <div className={styles.videoBG}>
           <iframe
-            src="https://player.vimeo.com/video/508037869?background=1"
+            id="topVideo"
+            src="https://player.vimeo.com/video/508037869?background=1&autopause=false"
             width="640"
             height="360"
             frameBorder="0"

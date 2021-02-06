@@ -16,7 +16,9 @@ export default function Services({ page }) {
         </div>
       </div>
       <div className={styles.content} ref={ref}>
-        <div className={`${styles.c4} ${styles.box}`} style={ { marginLeft: ((entry?.intersectionRatio) * 100) - 100 + 'px' }}>
+        <div className={`${styles.c4} ${styles.box}`}
+          style={ { marginLeft: ((entry?.intersectionRatio) * 100) - 100 + 'px', backgroundImage: `linear-gradient(${entry?.intersectionRatio * 180}deg, var(--blue), var(--blueDark))` }}
+        >
           <div>
             <h2>Video</h2>
             <h3>No project is too big or too small</h3>
@@ -28,7 +30,9 @@ export default function Services({ page }) {
             </p>
           )}
         </div>
-        <div className={`${styles.c4} ${styles.box}`}>
+        <div className={`${styles.c4} ${styles.box}`}
+          style={{ backgroundImage: `linear-gradient(${entry?.intersectionRatio * 180}deg, var(--red), var(--pink))` }}
+        >
           <div>
             <h2>Web</h2>
             <h3>Technical wizardry with rapid results</h3>
@@ -40,7 +44,9 @@ export default function Services({ page }) {
             </p>
           )} */}
         </div>
-        <div className={`${styles.c4} ${styles.box}`} style={ { marginRight: ((entry?.intersectionRatio) * 100) - 100 + 'px' }}>
+        <div className={`${styles.c4} ${styles.box}`}
+          style={ { marginRight: ((entry?.intersectionRatio) * 100) - 100 + 'px', backgroundImage: `linear-gradient(${entry?.intersectionRatio * 180}deg, var(--purple), var(--blueDark))` }}
+        >
           <div>
             <h2>Marketing</h2>
             <h3>Turnkey marketing solutions</h3>

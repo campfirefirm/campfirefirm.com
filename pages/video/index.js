@@ -54,8 +54,6 @@ export default function Video() {
           <Selector tags={tags} videos={videos.sort((a, b) => a.priority - b.priority)} />
         </section>
 
-        <Services page={'video'} />
-
         <section id="why">
           <h2 className={styles.title}>Why Us</h2>
           <div className={styles.content}>
@@ -94,6 +92,8 @@ export default function Video() {
             </div>
           </div>
         </section>
+
+        <Services page={'video'} />
       </main>
     </div>
   )

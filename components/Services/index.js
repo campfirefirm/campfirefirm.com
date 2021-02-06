@@ -1,7 +1,12 @@
 import Link from 'next/link'
 import styles from './Services.module.scss'
+import { useIntersect, buildThresholdArray } from 'helpers'
 
 export default function Services({ page }) {
+  const [ref, entry] = process.browser ? useIntersect({
+    threshold: buildThresholdArray(100)
+  }) : [null, null];
+
   return (
     <section id="services">
       <h2 className={styles.title}>Our Services</h2>
@@ -10,8 +15,8 @@ export default function Services({ page }) {
           <p>Campfire is more than just a production company. We’re a full-service creative agency.</p>
         </div>
       </div>
-      <div className={styles.content}>
-        <div className={`${styles.c4} ${styles.box}`}>
+      <div className={styles.content} ref={ref}>
+        <div className={`${styles.c4} ${styles.box}`} style={ { marginLeft: ((entry?.intersectionRatio) * 100) - 100 + 'px' }}>
           <div>
             <h2>Video</h2>
             <h3>No project is too big or too small</h3>
@@ -35,7 +40,7 @@ export default function Services({ page }) {
             </p>
           )} */}
         </div>
-        <div className={`${styles.c4} ${styles.box}`}>
+        <div className={`${styles.c4} ${styles.box}`} style={ { marginRight: ((entry?.intersectionRatio) * 100) - 100 + 'px' }}>
           <div>
             <h2>Marketing</h2>
             <h3>Turnkey marketing solutions</h3>

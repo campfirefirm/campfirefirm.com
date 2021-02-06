@@ -1,4 +1,4 @@
-import Link from 'next/Link'
+import Link from 'next/link'
 import styles from './Services.module.scss'
 
 export default function Services({ page }) {

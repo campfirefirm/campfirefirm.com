@@ -23,11 +23,15 @@ export default function Home() {
           ></iframe>
         </div>
 
-        <img
+        {/* <img
           className={styles.logoImg}
           src="/animation.gif"
           alt="logo"
-        />
+        /> */}
+
+        <div className={styles.topContent}>
+          <h2 className={styles.title}>Creative agency with marketing and technical expertise</h2>
+        </div>
       </div>
 
       <main className={styles.main}>

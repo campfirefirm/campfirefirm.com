@@ -1,5 +1,5 @@
 import styles from './Selector.module.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Selector({ tags, videos }) {
   const [activeTag, setActiveTag] = useState('all');
@@ -20,8 +20,18 @@ export default function Selector({ tags, videos }) {
       }
     });
 
-    setVisibleVideos(_new);
+    const tmp = _new.sort((a, b) => a.priority > b.priority)
+    setVisibleVideos(tmp);
   }
+
+  useEffect(() => {
+    window.addEventListener('keydown', (k) => {
+      // escape key
+      if (k.keyCode === 27) {
+        setWatch(null);
+      }
+    })
+  }, [])
 
   return (
     <>
@@ -33,11 +43,11 @@ export default function Selector({ tags, videos }) {
 
       <ul className={styles.blocks}>
         {videos.map( video => 
-          <li key={video.url} data-display={visibleVideos.indexOf(video) >= 0}>
+          <li key={video.id} data-display={visibleVideos.indexOf(video) >= 0}>
             <div className={styles.wrapper}>
-              <div className={styles.clickInterceptor} onClick={() => setWatch(video.url)}></div>
+              <div className={styles.clickInterceptor} onClick={() => setWatch(video.id)}></div>
               <iframe
-                src={`https://player.vimeo.com/video/${video.url}?controls=0`}
+                src={`https://player.vimeo.com/video/${video.id}?controls=0`}
                 width="640"
                 height="360"
                 frameBorder="0"
@@ -50,17 +60,18 @@ export default function Selector({ tags, videos }) {
             )}
           </li>
         )}
+        <li key={'extra'}></li>
       </ul>
 
       { watch && (
         <div className={styles.modal} onClick={() => setWatch(null) }>
           <div className={styles.modalContent}>
             <iframe
-                src={`https://player.vimeo.com/video/${watch}?controls=1`}
+                src={`https://player.vimeo.com/video/${watch}?controls=1&autoplay=1`}
                 width="640"
                 height="360"
                 frameBorder="0"
-                allow="fullscreen"
+                allow="fullscreen,autoplay"
                 loading="lazy"
               ></iframe>
           </div>

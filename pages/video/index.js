@@ -49,7 +49,7 @@ export default function Video() {
               With over a decade of production experience Campfire is ready to help you promote your product, campaign, or cause. From script to final video - we’ll be with you every step of the way.
             </div>
           </div>
-          <Selector tags={tags} videos={videos} />
+          <Selector tags={tags} videos={videos.sort((a, b) => a.priority - b.priority)} />
         </section>
       </main>
     </div>

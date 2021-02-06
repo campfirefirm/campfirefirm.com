@@ -173,7 +173,7 @@
 
 .blackBox {
   border: 10px solid;
-  border-image-slice: 1;
+  border-image-slice: 1 !important;
   border-width: 5px;
 
   h3 {

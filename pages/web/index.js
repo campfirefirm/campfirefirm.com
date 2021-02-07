@@ -1,42 +1,34 @@
 import Head from 'next/head'
 import styles from 'styles/Home.module.scss'
 import Services from 'components/Services'
-import Clients from 'components/Clients'
 
-export default function Home() {
+export default function Web() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Campfire Firm LLC</title>
+        <title>Web Development - Campfire Firm LLC</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.topVideo}>
-        <div className={styles.overlay}></div>
-        <div className={styles.videoBG}>
-          <iframe
-            src="https://player.vimeo.com/video/508037869?background=1&autopause=false"
-            width="640"
-            height="360"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-
-        {/* <img
-          className={styles.logoImg}
-          src="/animation.gif"
-          alt="logo"
-        /> */}
-
         <div className={styles.topContent}>
-          <h2 className={styles.title}>Creative agency with marketing and technical expertise</h2>
+          <div className={styles.overlayIcon}>
+            <img src="/topography.svg" alt="topography" />
+          </div>
+
+          <h2 className={styles.title}>We're here to help build your perfect website</h2>
         </div>
       </div>
 
       <main className={styles.main}>
-        <Services />
+        <section id="work">
+          <h2 className={styles.title}>Our Work</h2>
+          <div className={styles.content}>
+            <div className={styles.c9}>
+              <p>With a decade of experience in WordPress, Drupal, and front-end technologies, we're ready to help take your project to the next level. Our focus is on building beautiful and fast websites that have excellent accessibility and are easy to use.</p>
+            </div>
+          </div>
+        </section>
 
         <section id="about">
           <h2 className={styles.title}>Why Us</h2>
@@ -74,10 +66,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
 
-        <div id="work"></div>
-        <Clients />
+          <Services page={'web'} />
+        </section>
       </main>
     </div>
   )

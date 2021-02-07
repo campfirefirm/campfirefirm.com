@@ -1,0 +1,17 @@
+@import "styles/Helpers.module.scss";
+
+.content {
+  .c4 {
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    img {
+      max-width: 200px;
+      max-height: 80px;
+      height: auto;
+      width: auto;
+    }
+  }
+}

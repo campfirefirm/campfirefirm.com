@@ -36,13 +36,13 @@ export default function Services({ page }) {
           <div>
             <h2>Web</h2>
             <h3>Technical wizardry with rapid results</h3>
-            <p>From design, to templates, to integrations, to management - we can handle it all.</p>
+            <p>Design, development, deployment - we've got you covered on everything. We can handle any and all aspects of a web project to get you more happy customers.</p>
           </div>
-          {/* { page !== 'web' && (
+          { page !== 'web' && (
             <p>
               <Link href="/web">View offerings</Link>
             </p>
-          )} */}
+          )}
         </div>
         <div className={`${styles.c4} ${styles.box}`}
           style={ { marginRight: ((entry?.intersectionRatio) * 100) - 100 + 'px', backgroundImage: `linear-gradient(${entry?.intersectionRatio * 180}deg, var(--purple), var(--blueDark))` }}
@@ -52,11 +52,11 @@ export default function Services({ page }) {
             <h3>Turnkey marketing solutions</h3>
             <p>We’ll work with you to create a custom full-funnel marketing solution that’s right for your business. We’ll help you hone your message, develop the creative, and target the ads.</p>
           </div>
-          {/* { page !== 'marketing' && (
+          { page !== 'marketing' && (
             <p>
               <Link href="/marketing">Learn more</Link>
             </p>
-          )} */}
+          )}
         </div>
       </div>
     </section>

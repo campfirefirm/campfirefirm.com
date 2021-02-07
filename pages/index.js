@@ -18,6 +18,7 @@ export default function Home() {
         </div>
         <div className={styles.videoBG}>
           <iframe
+            title="background video"
             src="https://player.vimeo.com/video/508037869?background=1&autopause=false"
             width="640"
             height="360"
@@ -28,7 +29,7 @@ export default function Home() {
         </div>
 
         <div className={styles.topContent}>
-          <h2 className={styles.title}>Creative agency with marketing and technical expertise</h2>
+          <h2 className={styles.title}>A creative agency with marketing and technical expertise</h2>
         </div>
       </div>
 

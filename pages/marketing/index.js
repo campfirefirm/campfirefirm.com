@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from 'styles/Home.module.scss'
 import Services from 'components/Services'
+import Selector from 'components/Selector'
 
 export default function Marketing() {
   return (
@@ -25,7 +26,43 @@ export default function Marketing() {
           <h2 className={styles.title}>Our Work</h2>
           <div className={styles.content}>
             <div className={styles.c9}>
-              <p>We've scaled Presidential campaigns, SMB companies, and multinational enterprises in a wide array of industries to craft messaging and campaigns that generate real results.</p>
+              <p>We've scaled ads for Presidential campaigns, SMB companies, and multinational Enterprises in a wide array of industries to craft messaging and campaigns that generate real results.</p>
+            </div>
+          </div>
+
+          <div className={styles.content}>
+            <div className={styles.c12}>
+              <Selector videos={
+                [
+                  {
+                    "title": "Gig Car Share - On Your Terms",
+                    "id": "508962313",
+                    "priority": 1,
+                    "tags": ["Ads"]
+                  }, {
+                    "title": "Flipped the House",
+                    "id": "381715174",
+                    "priority": 2,
+                    "tags": ["Ads"]
+                  }, {
+                    "title": "No on U1 - Digital Ad",
+                    "id": "199232260",
+                    "priority": 3,
+                    "tags": ["Ads"]
+                }]
+              } />
+            </div>
+          </div>
+
+          <div className={styles.content}>
+            <div className={styles.c4}>
+              <img src="/ads/Trina_CI_Uncertainty.jpg" alt="Trina C&I ad" />
+            </div>
+            <div className={styles.c4}>
+              <img src="/ads/Trina_Residential_ReliableAsSun.jpg" alt="Trina Residential ad" />
+            </div>
+            <div className={styles.c4}>
+              <img src="/ads/Trina_TrinaPro_SmartSolution.jpg" alt="TrinaPro ad" />
             </div>
           </div>
         </section>
@@ -78,8 +115,8 @@ export default function Marketing() {
                 </svg>
               </div>
               <div>
-                <h2>Social Ads</h2>
-                <p>We've run social ad campaigns for small businesses, Presidential campaigns, and multinational enterprises.</p>
+                <h2>Integration</h2>
+                <p>We’re set apart by our ability to go from nothing to a full ad program - ideation, design, implementation, results, analysis.</p>
               </div>
             </div>
             <div className={`${styles.c4} ${styles.borderBox}`}>

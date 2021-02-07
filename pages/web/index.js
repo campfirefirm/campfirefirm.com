@@ -34,7 +34,7 @@ export default function Web() {
           <h2 className={styles.title}>Why Us</h2>
           <div className={styles.content}>
             <div className={styles.c7}>
-              <p>Campfire Firm is a creative team of experts in design, video production, web development, and digital marketing who are ready to help tell your story.</p>
+              <p>We build interactive and engaging websites that are beautiful, bespoke, accessible, and fast. We use Wordpress, Drupal, Marketo, Hubspot, or completely custom code depending on your needs.</p>
             </div>
           </div>
           <div className={styles.content}>

@@ -42,11 +42,13 @@ export default function Selector({ tags, videos }) {
 
   return (
     <>
-      <ul className={styles.tags}>
-        {tags.map(tag =>
-          <li data-active={tag === activeTag} key={tag} onClick={() => handler(tag)}>{tag[0].toUpperCase() + tag.slice(1)}</li>
-        )}
-      </ul>
+      {tags && (
+        <ul className={styles.tags}>
+          {tags.map(tag =>
+            <li data-active={tag === activeTag} key={tag} onClick={() => handler(tag)}>{tag[0].toUpperCase() + tag.slice(1)}</li>
+          )}
+        </ul>
+      )}
 
       <ul className={styles.blocks}>
         {videos.map( (video, i) =>
@@ -56,6 +58,7 @@ export default function Selector({ tags, videos }) {
             <div className={styles.wrapper}>
               <div className={styles.clickInterceptor} onClick={() => setWatch(video.id)}></div>
               <iframe
+                title={video.title}
                 src={`https://player.vimeo.com/video/${video.id}?controls=0`}
                 width="640"
                 height="360"
@@ -82,6 +85,7 @@ export default function Selector({ tags, videos }) {
         <div className={styles.modal} onClick={() => setWatch(null) }>
           <div className={styles.modalContent}>
             <iframe
+                title={'selected video'}
                 src={`https://player.vimeo.com/video/${watch}?controls=1&autoplay=1`}
                 width="640"
                 height="360"

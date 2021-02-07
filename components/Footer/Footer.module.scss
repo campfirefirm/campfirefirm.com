@@ -19,3 +19,12 @@
   font-size: 1.2rem;
   margin-top: 2rem;
 }
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+  margin-top: 2rem;
+}

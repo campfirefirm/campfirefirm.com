@@ -1,7 +1,7 @@
 @import "../../styles/Helpers.module.scss";
 
 .box {
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     margin: 0 !important;
     margin-top: 1rem !important;
   }

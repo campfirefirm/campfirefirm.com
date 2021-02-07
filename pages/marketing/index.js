@@ -16,7 +16,7 @@ export default function Marketing() {
             <img src="/topography.svg" alt="topography" />
           </div>
 
-          <h2 className={styles.title}>We're here to help you generate quality leads</h2>
+          <h2 className={styles.title}>We're here to help generate quality leads</h2>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ export default function Marketing() {
             </div>
           </div>
           <div className={styles.content}>
-            <div className={`${styles.c4} ${styles.blackBox}`}>
+            <div className={`${styles.c4} ${styles.borderBox}`}>
               <div className={styles.icon}>
                 <svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -61,7 +61,7 @@ export default function Marketing() {
                 <p>We work on the entire funnel to generate leads - from design to running ads to optimizing landing pages and web forms.</p>
               </div>
             </div>
-            <div className={`${styles.c4} ${styles.blackBox}`}>
+            <div className={`${styles.c4} ${styles.borderBox}`}>
               <div className={styles.icon}>
                 <svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -82,7 +82,7 @@ export default function Marketing() {
                 <p>We've run social ad campaigns for small businesses, Presidential campaigns, and multinational enterprises.</p>
               </div>
             </div>
-            <div className={`${styles.c4} ${styles.blackBox}`}>
+            <div className={`${styles.c4} ${styles.borderBox}`}>
               <div className={styles.icon}>
                 <svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -104,9 +104,9 @@ export default function Marketing() {
               </div>
             </div>
           </div>
-
-          <Services page={'marketing'} />
         </section>
+
+        <Services page={'marketing'} />
       </main>
     </div>
   )

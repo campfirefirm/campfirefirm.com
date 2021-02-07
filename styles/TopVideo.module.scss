@@ -43,6 +43,10 @@
     color: var(--white);
     margin: 0;
     z-index: 1;
+
+    @media (max-width: 480px) {
+      font-size: 15vw;
+    }
   }
 
   p {

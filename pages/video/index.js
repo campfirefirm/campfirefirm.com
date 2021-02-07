@@ -10,14 +10,14 @@ export default function Video() {
     threshold: buildThresholdArray(100)
   }) : [null, null];
 
-  const tags = ['all'];
-  videos.map(v => {
-    for (let t of v.tags) {
-      if (tags.indexOf(t) < 0) {
-        tags.push(t);
-      }
-    }
-  });
+  const tags = ['all', 'Political', 'Ads', 'Explainers', 'Miscellaneous'];
+  // videos.map(v => {
+  //   for (let t of v.tags) {
+  //     if (tags.indexOf(t) < 0) {
+  //       tags.push(t);
+  //     }
+  //   }
+  // });
 
   return (
     <div className={styles.container}>
@@ -68,7 +68,7 @@ export default function Video() {
             </div>
           </div>
           <div className={styles.content}>
-            <div className={`${styles.c4} ${styles.blackBox}`}
+            <div className={`${styles.c4} ${styles.borderBox}`}
               style={{ borderImageSource: `linear-gradient(${entry?.intersectionRatio * 180}deg, var(--blue), var(--blueDark))` }}
             >
               <div>
@@ -79,7 +79,7 @@ export default function Video() {
                 <p>We can help turn your ideas into engaging videos. Just tells us what you’re trying to communicate, who you want to reach, and we can do the rest.</p>
               </div>
             </div>
-            <div className={`${styles.c4} ${styles.blackBox}`}
+            <div className={`${styles.c4} ${styles.borderBox}`}
               style={{ borderImageSource: `linear-gradient(${entry?.intersectionRatio * 180}deg, var(--red), var(--pink))` }}
             >
               <div>
@@ -90,7 +90,7 @@ export default function Video() {
                 <p>In our decade of producing videos we’ve seen and done it all. We know all the potential pitfalls and will use our experience to help you create the right video for your business needs.</p>
               </div>
             </div>
-            <div className={`${styles.c4} ${styles.blackBox}`}
+            <div className={`${styles.c4} ${styles.borderBox}`}
               style={{ borderImageSource: `linear-gradient(${entry?.intersectionRatio * 180}deg, var(--purple), var(--blueDark))` }}
             >
               <div>

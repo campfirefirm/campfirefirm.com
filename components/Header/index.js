@@ -31,6 +31,9 @@ const Header = () => {
             <a href="#work">Work</a>
           </li>
           <li>
+            <a href="/video">Video</a>
+          </li>
+          <li>
             <a href="#about">About</a>
           </li>
           <li>

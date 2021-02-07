@@ -2,7 +2,7 @@
   display: inline-block;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     max-width: calc((#{$w} / 12) * 100% - 1rem);
   }
 }
@@ -68,6 +68,10 @@
   @media (max-width: 767px) {
     font-size: calc(5rem * 0.7);
   }
+
+  @media (max-width: 480px) {
+    font-size: 15vw;
+  }
 }
 
 .subtitle {
@@ -102,6 +106,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .main {
@@ -126,7 +131,7 @@
 }
 
 .box,
-.blackBox {
+.borderBox {
   padding: 1rem 2rem;
   margin-bottom: 1rem;
   display: flex;
@@ -171,7 +176,7 @@
   }
 }
 
-.blackBox {
+.borderBox {
   border: 10px solid;
   border-image-slice: 1 !important;
   border-width: 5px;

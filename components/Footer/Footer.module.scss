@@ -1,8 +1,21 @@
 .footer {
-  margin-bottom: 2rem;
+  margin: 0;
+  padding: 2rem;
+  min-height: 200px;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImg {
+  max-width: 200px;
 }
 
 .copy {
   text-align: center;
   font-size: 1.2rem;
+  margin-top: 2rem;
 }

@@ -27,6 +27,18 @@ export default function Web() {
             <div className={styles.c9}>
               <p>With a decade of experience in WordPress, Drupal, and front-end technologies, we're ready to help take your project to the next level. Our focus is on building beautiful and fast websites that have excellent accessibility and are easy to use.</p>
             </div>
+
+            <div className={styles.content}>
+              <div className={`${styles.c4} ${styles.borderBox} ${styles.nopad}`}>
+                <img src="/web/aaa.jpg" alt="AAA" />
+              </div>
+              <div className={`${styles.c4} ${styles.borderBox} ${styles.nopad}`}>
+                <img src="/web/biodiesel.jpg" alt="Biodiesel Sustainability Now" />
+              </div>
+              <div className={`${styles.c4} ${styles.borderBox} ${styles.nopad}`}>
+                <img src="/web/tom-climate.gif" alt="Tom Steyer" />
+              </div>
+            </div>
           </div>
         </section>
 

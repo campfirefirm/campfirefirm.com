@@ -19,6 +19,7 @@ export default function Clients({ page }) {
         <div className={styles.c4}>
           <img src="/customers/splc.png" alt="Southern Poverty Law Center" loading="lazy" />
         </div>
+
         <div className={styles.c4}>
           <img src="/customers/aaa.png" alt="AAA" loading="lazy" />
         </div>
@@ -27,6 +28,16 @@ export default function Clients({ page }) {
         </div>
         <div className={styles.c4}>
           <img src="/customers/biodieselsustainabilitynow.svg" alt="Biodiesel Sustainability Now" loading="lazy" />
+        </div>
+
+        <div className={styles.c4}>
+          <img src="/customers/thoughtspot.svg" alt="Thoughtspot" loading="lazy" />
+        </div>
+        <div className={styles.c4}>
+          <img src="/customers/deckhand.png" alt="Dechkand" loading="lazy" />
+        </div>
+        <div className={styles.c4}>
+          <img src="/customers/tigercomm.png" alt="Tigercomm" loading="lazy" />
         </div>
       </div>
     </section>

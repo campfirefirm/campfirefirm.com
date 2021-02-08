@@ -26,7 +26,7 @@ export default function Marketing() {
           <h2 className={styles.title}>Our Work</h2>
           <div className={styles.content}>
             <div className={styles.c9}>
-              <p>We've scaled ads for Presidential campaigns, SMB companies, and multinational Enterprises in a wide array of industries to craft messaging and campaigns that generate real results.</p>
+              <p>We've scaled ads for Presidential campaigns, small to medium sized businesses, and multinational Enterprises in a wide array of industries to craft messaging and campaigns that generate real results.</p>
             </div>
           </div>
 

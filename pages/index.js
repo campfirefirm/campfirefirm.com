@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         <div className={styles.topContent}>
-          <h2 className={styles.title}>A creative agency with marketing and technical expertise</h2>
+          <h2 className={styles.title}>A creative and marketing agency that can do it all</h2>
         </div>
       </div>
 

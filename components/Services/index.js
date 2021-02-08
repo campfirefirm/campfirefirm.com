@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from './Services.module.scss'
-import { useIntersect, buildThresholdArray } from 'helpers'
+import { useIntersect, buildThresholdArray } from 'utils'
 
 export default function Services({ page }) {
   const [ref, entry] = process.browser ? useIntersect({

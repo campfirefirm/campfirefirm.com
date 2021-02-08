@@ -3,7 +3,7 @@ import Selector from 'components/Selector'
 import Services from 'components/Services'
 import styles from './Video.module.scss'
 import videos from './videos.json'
-import { useIntersect, buildThresholdArray } from 'helpers'
+import { useIntersect, buildThresholdArray } from 'utils'
 
 export default function Video() {
   const [ref, entry] = process.browser ? useIntersect({

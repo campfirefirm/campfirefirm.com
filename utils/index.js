@@ -28,3 +28,13 @@ export const useIntersect = ({ root = null, rootMargin, threshold = 0 }) => {
 };
 
 export const buildThresholdArray = (steps) => Array.from(Array(steps).keys(), i => i / steps);
+
+export const GTMPageView = (url) => {
+  const pageEvent = {
+    event: 'pageview',
+    page: url,
+  };
+
+  window && window.dataLayer && window.dataLayer.push(pageEvent);
+  return pageEvent;
+};

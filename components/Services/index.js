@@ -12,7 +12,7 @@ export default function Services({ page }) {
       <h2 className={styles.title}>Our Services</h2>
       <div className={styles.content}>
         <div className={styles.c9}>
-          <p>Campfire is a full-service creative agency. We're a group of polymaths who have expertise in video, web development, and marketing. Our <i>top priority</i> is your <u>bottom line</u> - we work efficiently to get your project done on time and within budget.</p>
+          <p>Campfire is a full-service creative agency. We're a group of polymaths who have expertise in video, web development, and marketing.</p>
         </div>
       </div>
       <div className={styles.content} ref={ref}>

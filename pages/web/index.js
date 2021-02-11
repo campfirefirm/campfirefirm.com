@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from 'styles/Home.module.scss'
-import Services from 'components/Services'
 
 export default function Web() {
   return (
@@ -79,8 +78,6 @@ export default function Web() {
             </div>
           </div>
         </section>
-
-        <Services page={'web'} />
       </main>
     </div>
   )

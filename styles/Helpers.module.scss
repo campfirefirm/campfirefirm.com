@@ -163,15 +163,18 @@
   }
 
   &:nth-last-of-type(1) {
-    background: linear-gradient(-18deg, var(--blueDark), var(--purple));
+    // background: linear-gradient(-18deg, var(--blueDark), var(--purple));
+    background: linear-gradient(30deg, var(--purple), var(--blueDark));
   }
 
   &:nth-last-of-type(2) {
-    background: linear-gradient(-18deg, var(--redDark), var(--red));
+    // background: linear-gradient(-18deg, var(--red), var(--pink));
+    background: linear-gradient(0deg, var(--purple), var(--blueDark));
   }
 
   &:nth-last-of-type(3) {
-    background: linear-gradient(-18deg, var(--blueDark), var(--blue));
+    // background: linear-gradient(-18deg, var(--blueDark), var(--blue));
+    background: linear-gradient(-30deg, var(--purple), var(--blueDark));
   }
 }
 
@@ -179,6 +182,7 @@
   border: 10px solid;
   border-image-slice: 1 !important;
   border-width: 5px;
+  border-image-source: linear-gradient(-18deg, var(--black), var(--gray));
 
   h3 {
     text-align: center;
@@ -214,7 +218,7 @@
 
     .icon {
       svg {
-        fill: var(--red);
+        fill: var(--pink);
         g {
           stroke: none;
         }

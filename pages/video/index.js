@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Selector from 'components/Selector'
-import Services from 'components/Services'
 import styles from './Video.module.scss'
 import videos from './videos.json'
 import { useIntersect, buildThresholdArray } from 'utils'
@@ -104,8 +103,6 @@ export default function Video() {
             </div>
           </div>
         </section>
-
-        <Services page={'video'} />
       </main>
     </div>
   )

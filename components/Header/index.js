@@ -25,19 +25,19 @@ const Header = () => {
       <nav className={styles.nav} data-showmobile={showMobile}>
         <ul>
           <li>
-            <a href="#services">Services</a>
+            <Link href="/#services">Services</Link>
           </li>
           <li>
             <a href="#work">Work</a>
           </li>
           <li>
-            <a href="/video">Video</a>
+            <Link href="/video">Video</Link>
           </li>
           <li>
             <a href="#about">About</a>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <a href="mailto:hello@campfirefirm.com">Contact</a>
           </li>
         </ul>
       </nav>

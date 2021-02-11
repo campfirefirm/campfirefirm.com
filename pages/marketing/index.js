@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from 'styles/Home.module.scss'
-import Services from 'components/Services'
 import Selector from 'components/Selector'
 
 export default function Marketing() {
@@ -132,8 +131,6 @@ export default function Marketing() {
             </div>
           </div>
         </section>
-
-        <Services page={'marketing'} />
       </main>
     </div>
   )

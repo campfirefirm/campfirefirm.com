@@ -19,7 +19,7 @@ export default function Footer() {
             fill="#fff"><rect
             width="512" height="512"
             rx="15%"
-            fill="var(--red)"
+            fill="var(--white)"
             // fill="#0077b5"
             /><circle fill="var(--black)" cx="142" cy="138" r="37"/>
               <path stroke="var(--black)" strokeWidth="66" d="M244 194v198M142 194v198"/>
@@ -35,7 +35,7 @@ export default function Footer() {
             viewBox="0 0 512 512"><rect
             width="512" height="512"
             rx="15%"
-            fill="var(--red)"
+            fill="var(--white)"
             // fill="#1877f2"
             /><path d="M355.6 330l11.4-74h-71v-48c0-20.2 9.9-40 41.7-40H370v-63s-29.3-5-57.3-5c-58.5 0-96.7 35.4-96.7 99.6V256h-65v74h65v182h80V330h59.6z" fill="var(--black)"/></svg>
           </a>
@@ -48,11 +48,11 @@ export default function Footer() {
             viewBox="0 0 512 512"><rect
             width="512" height="512"
             rx="15%"
-            fill="var(--red)"
+            fill="var(--white)"
             // fill="teal"
             />
               <rect width="356" height="256" x="78" y="128" fill="var(--black)" rx="8%"/>
-              <path fill="none" stroke="var(--red)" strokeWidth="20" d="M434 128L269 292c-7 8-19 8-26 0L78 128m0 256l129-128m227 128L305 256"/>
+              <path fill="none" stroke="var(--white)" strokeWidth="20" d="M434 128L269 292c-7 8-19 8-26 0L78 128m0 256l129-128m227 128L305 256"/>
             </svg>
           </a>
         </div>

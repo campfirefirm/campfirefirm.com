@@ -153,7 +153,48 @@
 }
 
 .box {
+  position: relative;
   color: var(--white);
+
+  &.img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // filter: grayscale(1);
+    // transition: filter 0.3s;
+
+    // &:hover {
+    //   filter: grayscale(0) saturate(1.2);
+    // }
+
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      // background: rgba(17,17,25, 0.7);
+      background: rgba(0,0,0, 0.7);
+    }
+
+    border-bottom: 15px solid;
+
+    &:nth-last-of-type(1) {
+      border-bottom-color: var(--purple);
+    }
+    &:nth-last-of-type(2) {
+      border-bottom-color: var(--pink);
+    }
+    &:nth-last-of-type(3) {
+      border-bottom-color: var(--blue);
+    }
+  }
+
+  * {
+    position: relative;
+  }
 
   a {
     padding: 0.5rem 1rem;
@@ -214,7 +255,7 @@
   }
 
   &:nth-last-of-type(2) {
-    border-image-source: linear-gradient(-18deg, var(--pink), var(--red));
+    border-image-source: linear-gradient(-18deg, var(--red), var(--pink));
 
     .icon {
       svg {

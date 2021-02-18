@@ -12,12 +12,15 @@ export default function Services({ page }) {
       <h2 className={styles.title}>Our Services</h2>
       <div className={styles.content}>
         <div className={styles.c9}>
-          <p>Campfire is a full-service creative agency. We're a group of polymaths who have expertise in video, web development, and marketing.</p>
+          <p>Campfire is a full-service creative agency. We're a group of talented experts in video, web development, and marketing.</p>
         </div>
       </div>
       <div className={styles.content} ref={ref}>
-        <div className={`${styles.c4} ${styles.box}`}
-          style={ { marginLeft: ((entry?.intersectionRatio) * 100) - 100 + 'px' }}
+        <div className={`${styles.c4} ${styles.box} ${styles.img}`}
+          style={{
+            marginLeft: ((entry?.intersectionRatio) * 100) - 100 + 'px',
+            backgroundImage: `url('/video/Campfire_Set.jpg')`,
+          }}
         >
           <div>
             <h2>Video</h2>
@@ -30,11 +33,15 @@ export default function Services({ page }) {
             </p>
           )}
         </div>
-        <div className={`${styles.c4} ${styles.box}`}>
+        <div className={`${styles.c4} ${styles.box} ${styles.img}`}
+          style={{
+            backgroundImage: `url('/web/web.jpg')`,
+          }}
+        >
           <div>
             <h2>Web</h2>
             <h3>Technical wizardry with rapid results</h3>
-            <p>Design, development, deployment - we've got you covered on everything. We can handle any and all aspects of a web project to get you more happy customers.</p>
+            <p>Design, development, deployment - we've got you covered. We can handle any and all aspects of a web project and will work with you every step of the way.</p>
           </div>
           { page !== 'web' && (
             <p>
@@ -42,13 +49,16 @@ export default function Services({ page }) {
             </p>
           )}
         </div>
-        <div className={`${styles.c4} ${styles.box}`}
-          style={ { marginRight: ((entry?.intersectionRatio) * 100) - 100 + 'px' }}
+        <div className={`${styles.c4} ${styles.box} ${styles.img}`}
+          style={{ 
+            marginRight: ((entry?.intersectionRatio) * 100) - 100 + 'px',
+            backgroundImage: `url('/marketing/marketing.jpg')`,
+          }}
         >
           <div>
             <h2>Marketing</h2>
             <h3>Turnkey marketing solutions</h3>
-            <p>We’ll work with you to create a custom full-funnel marketing solution that’s right for your business. We’ll help you hone your message, develop the creative, and target the ads.</p>
+            <p>We’ll work with you to create a custom full-funnel marketing solution that’s right for your business. We will hone your message, develop the creative, and target the ads.</p>
           </div>
           { page !== 'marketing' && (
             <p>

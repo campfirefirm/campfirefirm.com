@@ -34,7 +34,7 @@ const Header = () => {
             <Link href="/video">Video</Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link href="/about">About</Link>
           </li>
           <li>
             <a href="mailto:hello@campfirefirm.com">Contact</a>

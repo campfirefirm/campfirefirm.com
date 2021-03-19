@@ -35,7 +35,7 @@ export default function About() {
                 </div>
                 <div>
                   <h2>Morgan White</h2>
-                  <p>TODO</p>
+                  <p>Bio</p>
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function About() {
                 </div>
                 <div>
                   <h2>Bran Sorem</h2>
-                  <p>TODO</p>
+                  <p>Bio</p>
                 </div>
               </div>
             </div>

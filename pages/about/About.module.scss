@@ -16,6 +16,11 @@
   border-image-slice: 1 !important;
   border-width: 5px;
 
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+
   h2 {
     font-size: 2.2rem;
     text-align: center;
@@ -37,6 +42,8 @@
   }
 
   .personImage {
+    margin: auto;
+
     img {
       width: 100%;
       height: 100%;

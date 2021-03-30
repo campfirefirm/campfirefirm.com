@@ -24,7 +24,7 @@ export default function About() {
         <h2 className={styles.title}>Founders</h2>
           <div className={styles.content}>
             <div className={styles.c7}>
-              <p>TODO</p>
+              <p></p>
             </div>
           </div>
           <div className={styles.content}>
@@ -35,7 +35,7 @@ export default function About() {
                 </div>
                 <div>
                   <h2>Morgan White</h2>
-                  <p>Bio</p>
+                  <p>Morgan has more than a decade of experience producing award-winning creative media. From cinematography to writing, producing, directing, editing, live streaming, and managing teams of designers and animators - over the course of his career he has done it all.</p>
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function About() {
                 </div>
                 <div>
                   <h2>Bran Sorem</h2>
-                  <p>Bio</p>
+                  <p>Bran has been developing software professionally for over 10 years - working with Drupal, WordPress and more. He developed the first browser-based underwater robot software and has worked with small startups to enterprise corporations to nonprofits to political campaigns.</p>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function About() {
           <h2 className={styles.title}>Creative Team</h2>
           <div className={styles.content}>
             <div className={styles.c7}>
-              <p>TODO</p>
+              <p></p>
             </div>
           </div>
           <div className={styles.content}>
@@ -68,7 +68,7 @@ export default function About() {
                 </div>
                 <div>
                   <h2>Avery Peterson</h2>
-                  <p>Before becoming a contract video producer, editor and consultant, Avery Peterson served as the lead videographer for Tom Steyer’s 2020 Presidential Campaign, where she traveled across the country capturing the campaign’s daily momentum. She previously served as the lead video specialist for a national issue-based campaign and is currently directing a documentary at San Quentin State Prison. Avery has a passion for and track record of harnessing visual storytelling for public good. She is an award-winning alumni of San Francisco State’s Journalism Program.</p>
+                  <p>Avery Peterson served as the lead videographer for Tom Steyer’s 2020 Presidential Campaign. She is currently directing a documentary at San Quentin State Prison. Avery has a passion for harnessing visual storytelling for public good. She is an award-winning alumni of San Francisco State’s Journalism Program.</p>
                 </div>
               </div>
               <p><a href="https://www.averylynnpeterson.com/" target="_blank" rel="noopener noreferrer">Learn more here</a></p>
@@ -92,7 +92,7 @@ export default function About() {
                 </div>
                 <div>
                   <h2>Melissa Cetlin</h2>
-                  <p>Melissa is a professionally trained graphic designer, and alumni from Rhode Island School of Design (RISD). She has been managing her own design business for over a decade. Melissa works primarily with clients who are mission driven to make the world a more just and sustainable place. Much of her experience is in the political and nonprofit world, helping them across the range of design needs; from logos to social media and everything in between.</p>
+                  <p>Melissa is a professionally trained graphic designer and works primarily with clients who are mission driven to make the world a more just and sustainable place. Melissa works in the political and nonprofit world - helping them across the range of design needs from logos to social media and everything in between.</p>
                 </div>
               </div>
               <p><a href="https://www.hellomelissacetlin.com/" target="_blank" rel="noopener noreferrer">Learn more here</a></p>

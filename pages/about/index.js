@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from './About.module.scss'
+import Selector from 'components/Selector'
 
 export default function About() {
   return (
@@ -96,6 +97,51 @@ export default function About() {
                 </div>
               </div>
               <p><a href="https://www.hellomelissacetlin.com/" target="_blank" rel="noopener noreferrer">Learn more here</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section id="work">
+          <h2 className={styles.title}>Our Work</h2>
+          <div className={styles.content}>
+            <div className={styles.c9}>
+              <p>We've scaled ads for Presidential campaigns, small to medium sized businesses, and multinational Enterprises in a wide array of industries to craft messaging and campaigns that generate real results. Our <i>top priority</i> is your <u>bottom line</u> - we work efficiently to get your project done on time and within budget.</p>
+            </div>
+          </div>
+
+          <div className={styles.content}>
+            <div className={styles.c12}>
+              <Selector videos={
+                [
+                  {
+                    "title": "Gig Car Share - On Your Terms",
+                    "id": "508962313",
+                    "priority": 1,
+                    "tags": ["Ads"]
+                  }, {
+                    "title": "Flipped the House",
+                    "id": "381715174",
+                    "priority": 2,
+                    "tags": ["Ads"]
+                  }, {
+                    "title": "No on U1 - Digital Ad",
+                    "id": "199232260",
+                    "priority": 3,
+                    "tags": ["Ads"]
+                }]
+              } />
+            </div>
+          </div>
+
+          <div className={styles.content}>
+            <div className={styles.c4}>
+              <img src="/ads/Trina_CI_Uncertainty.jpg" alt="Trina C&I ad" />
+            </div>
+            <div className={styles.c4}>
+              <img src="/ads/Trina_Residential_ReliableAsSun.jpg" alt="Trina Residential ad" />
+            </div>
+            <div className={styles.c4}>
+              <img src="/ads/Trina_TrinaPro_SmartSolution.jpg" alt="TrinaPro ad" />
             </div>
           </div>
         </section>

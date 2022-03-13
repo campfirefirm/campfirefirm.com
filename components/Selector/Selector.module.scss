@@ -6,7 +6,7 @@
     display: block;
     margin-right: 1rem;
     margin-top: 0.5rem;
-    background-color: var(--pink);
+    background-color: var(--primary);
     color: var(--white);
     padding: 0.5rem 1.5rem;
     font-weight: 500;
@@ -16,7 +16,7 @@
     }
 
     &[data-active=true] {
-      background-color: var(--purple);
+      background-color: var(--accent);
     }
 
     &:hover {
@@ -75,7 +75,7 @@
 }
 
 .showAll {
-  background-color: var(--pink);
+  background-color: var(--accent);
   color: var(--white);
   font-weight: 500;
   display: inline-block;

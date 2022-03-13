@@ -91,7 +91,7 @@ export default function Video() {
               </div>
             </div>
             <div className={`${styles.c4} ${styles.borderBox}`}
-              style={{ borderImageSource: `linear-gradient(${entry?.intersectionRatio * 180}deg, var(--purple), var(--blueDark))` }}
+              style={{ borderImageSource: `linear-gradient(${entry?.intersectionRatio * 180}deg, var(--secondary), var(--blueDark))` }}
             >
               <div>
                 <div className={styles.icon}>

@@ -6,12 +6,12 @@ export default function Clients({ page }) {
       <h2 className={styles.title}>Credibility</h2>
       <div className={styles.content}>
         <div className={styles.c7}>
-          <p>Here are some of our happy customers:</p>
+          <p>Here are some happy companies we've worked with:</p>
         </div>
       </div>
       <div className={styles.content}>
         <div className={styles.c4}>
-          <img src="/customers/tomsteyer.svg" alt="Tom Steyer" loading="lazy" />
+          <img src="/customers/aaa.png" alt="AAA" loading="lazy" />
         </div>
         <div className={styles.c4}>
           <img src="/customers/snowflake.svg" alt="Snowflake" loading="lazy" />
@@ -21,7 +21,7 @@ export default function Clients({ page }) {
         </div>
 
         <div className={styles.c4}>
-          <img src="/customers/aaa.png" alt="AAA" loading="lazy" />
+          <img src="/customers/tomsteyer.svg" alt="Tom Steyer" loading="lazy" />
         </div>
         <div className={styles.c4}>
           <img src="/customers/trinasolar.png" alt="Trina Solar" loading="lazy" />
@@ -39,6 +39,17 @@ export default function Clients({ page }) {
         <div className={styles.c4}>
           <img src="/customers/tigercomm.png" alt="Tigercomm" loading="lazy" />
         </div>
+
+        <div className={styles.c4}>
+          <img src="/customers/tesla.svg" alt="Tesla" loading="lazy" />
+        </div>
+        <div className={styles.c4}>
+          <img src="/customers/ciphertrace.svg" alt="ciphertrace" loading="lazy" />
+        </div>
+        <div className={styles.c4}>
+          <img src="/customers/srfc.png" alt="Sac Republic FC" loading="lazy" />
+        </div>
+        
       </div>
     </section>
   )

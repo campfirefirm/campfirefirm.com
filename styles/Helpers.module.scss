@@ -79,7 +79,7 @@
   line-height: 1;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--blueDark);
+  color: var(--secondary);
 
   @media (min-width: 768px) {
     font-size: 3rem;
@@ -182,13 +182,13 @@
     border-bottom: 15px solid;
 
     &:nth-last-of-type(1) {
-      border-bottom-color: var(--purple);
+      border-bottom-color: var(--primary);
     }
     &:nth-last-of-type(2) {
-      border-bottom-color: var(--pink);
+      border-bottom-color: var(--primary);
     }
     &:nth-last-of-type(3) {
-      border-bottom-color: var(--blue);
+      border-bottom-color: var(--primary);
     }
   }
 
@@ -205,17 +205,17 @@
 
   &:nth-last-of-type(1) {
     // background: linear-gradient(-18deg, var(--blueDark), var(--purple));
-    background: linear-gradient(30deg, var(--purple), var(--blueDark));
+    background: linear-gradient(30deg, var(--primary), var(--primary));
   }
 
   &:nth-last-of-type(2) {
     // background: linear-gradient(-18deg, var(--red), var(--pink));
-    background: linear-gradient(0deg, var(--purple), var(--blueDark));
+    background: linear-gradient(0deg, var(--primary), var(--primary));
   }
 
   &:nth-last-of-type(3) {
     // background: linear-gradient(-18deg, var(--blueDark), var(--blue));
-    background: linear-gradient(-30deg, var(--purple), var(--blueDark));
+    background: linear-gradient(-30deg, var(--primary), var(--primary));
   }
 }
 
@@ -223,7 +223,7 @@
   border: 10px solid;
   border-image-slice: 1 !important;
   border-width: 5px;
-  border-image-source: linear-gradient(-18deg, var(--black), var(--gray));
+  border-image-source: linear-gradient(-18deg, var(--black), var(--black));
 
   h3 {
     text-align: center;
@@ -242,11 +242,11 @@
   }
 
   &:nth-last-of-type(1) {
-    border-image-source: linear-gradient(-18deg, var(--blueDark), var(--purple));
+    border-image-source: linear-gradient(-18deg, var(--black), var(--accent));
 
     .icon {
       svg {
-        fill: var(--purple);
+        fill: var(--accent);
         g {
           stroke: none;
         }
@@ -255,11 +255,11 @@
   }
 
   &:nth-last-of-type(2) {
-    border-image-source: linear-gradient(-18deg, var(--red), var(--pink));
+    border-image-source: linear-gradient((-18deg, var(--black), var(--accent)));
 
     .icon {
       svg {
-        fill: var(--pink);
+        fill: var(--accent);
         g {
           stroke: none;
         }
@@ -268,11 +268,11 @@
   }
 
   &:nth-last-of-type(3) {
-    border-image-source: linear-gradient(-18deg, var(--blueDark), var(--blue));
+    border-image-source: linear-gradient(-18deg, var(--black), var(--accent));
 
     .icon {
       svg {
-        fill: var(--blue);
+        fill: var(--accent);
         g {
           stroke: none;
         }
@@ -288,7 +288,7 @@
 .btn {
   font-size: 1.2rem;
   color: var(--white);
-  background-color: var(--blue);
+  background-color: var(--primary);
   padding: 1rem 2rem;
   border-radius: 5px;
   margin-top: 1rem;

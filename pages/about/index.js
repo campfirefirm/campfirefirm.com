@@ -35,7 +35,7 @@ export default function About() {
                   <img src="/team/morgan.jpg" />
                 </div>
                 <div>
-                  <h2>Morgan White</h2>
+                  <h2>Morgan White, Co-Founder</h2>
                   <p>Morgan has more than a decade of experience producing award-winning creative media. From cinematography to writing, producing, directing, editing, live streaming, and managing teams of designers and animators - over the course of his career he has done it all.</p>
                 </div>
               </div>
@@ -46,8 +46,8 @@ export default function About() {
                   <img src="/team/bran.jpg" />
                 </div>
                 <div>
-                  <h2>Bran Sorem</h2>
-                  <p>Bran has been developing software professionally for over 10 years - working with Drupal, WordPress and more. He developed the first browser-based underwater robot software and has worked with small startups to enterprise corporations to nonprofits to political campaigns.</p>
+                  <h2>Bran Sorem, Co-Founder</h2>
+                  <p>Bran started his career as a film composer before moving into software development. He then developed the first browser-based underwater robot video and control software. He has over a decade of experience in sound design. He holds a M.S. in Computer Science.</p>
                 </div>
               </div>
             </div>
@@ -68,8 +68,8 @@ export default function About() {
                   <img src="/team/avery.jpg" />
                 </div>
                 <div>
-                  <h2>Avery Peterson</h2>
-                  <p>Avery Peterson served as the lead videographer for Tom Steyer’s 2020 Presidential Campaign. She is currently directing a documentary at San Quentin State Prison. Avery has a passion for harnessing visual storytelling for public good. She is an award-winning alumni of San Francisco State’s Journalism Program.</p>
+                  <h2>Avery Peterson, Freelance Videographer</h2>
+                  <p>Avery Peterson is currently directing a documentary at San Quentin State Prison. She has a passion for harnessing visual storytelling for the public good. Avery is an award-winning alumna of San Francisco State's Journalism Program.</p>
                 </div>
               </div>
               <p><a href="https://www.averylynnpeterson.com/" target="_blank" rel="noopener noreferrer">Learn more here</a></p>
@@ -80,7 +80,7 @@ export default function About() {
                   <img src="/team/frank.jpg" />
                 </div>
                 <div>
-                  <h2>Frank Wells</h2>
+                  <h2>Frank Wells, Freelance Motion Graphics</h2>
                   <p>Frank Wells is a senior motion graphic designer/video editor with projects related to film (Star Wars Rogue One, Harry Potter), TV (Ellen DeGeneres, Netflix, HBO), and national campaigns for corporate brands (Tom Steyer, Nissan, Salesforce, Verizon).</p>
                 </div>
               </div>
@@ -92,8 +92,8 @@ export default function About() {
                   <img src="/team/melissa.jpg" />
                 </div>
                 <div>
-                  <h2>Melissa Cetlin</h2>
-                  <p>Melissa is a professionally trained graphic designer and works primarily with clients who are mission driven to make the world a more just and sustainable place. Melissa works in the political and nonprofit world - helping them across the range of design needs from logos to social media and everything in between.</p>
+                  <h2>Melissa Cetlin, Freelance Graphic Designer</h2>
+                  <p>Melissa works primarily with clients who are mission driven to make the world a more just and sustainable place. She works in the political and nonprofit world - helping them across the range of design needs from logos to social media and everything in between.</p>
                 </div>
               </div>
               <p><a href="https://www.hellomelissacetlin.com/" target="_blank" rel="noopener noreferrer">Learn more here</a></p>

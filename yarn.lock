@@ -2571,14 +2571,6 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@^16.9.32":
-  version "16.9.49"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.49.tgz#09db021cf8089aba0cdb12a49f8021a69cce4872"
-  integrity sha512-DtLFjSj0OYAdVLBbyjhuV9CdGVHCkHn2R+xr3XkBvK2rS1Y1tkc14XSGjYgm5Fjjr90AxH9tiSzc1pCFMGO06g==
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^3.0.2"
-
 "@types/reflexbox@^4.0.0":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@types/reflexbox/-/reflexbox-4.0.1.tgz#dfe91aace3c931766507cfd1cce65498a4d052a0"
@@ -2642,11 +2634,6 @@
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
-
-"@types/vimeo__player@^2.9.0":
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/@types/vimeo__player/-/vimeo__player-2.9.0.tgz#47f70c2e9788670e64c6e2186b0f9c9e2e96f34f"
-  integrity sha512-KLcx6GR+iXfLKnP2ecnK808rX6uf+y/aPOzOw4+lQBc8SqlMn4xv6cX6eXgKBaZgau8qNbNLzbS4RyW5ojrJhg==
 
 "@types/warning@^3.0.0":
   version "3.0.0"
@@ -2763,30 +2750,12 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@u-wave/react-vimeo@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@u-wave/react-vimeo/-/react-vimeo-0.9.0.tgz#f33d1a6069393c09f94e0aeb81b123e33ddef7e8"
-  integrity sha512-xGE0WQtQEkfCdMsrGwzNvGjMARdU2pMQ3xdtmR1ruIYnImIJyUG/XrbLtOy+F9f8c4fVEtiyPrJIa15B7kCayA==
-  dependencies:
-    "@types/react" "^16.9.32"
-    "@types/vimeo__player" "^2.9.0"
-    "@vimeo/player" "^2.10.0"
-    prop-types "^15.7.2"
-
 "@urql/core@^1.11.0":
   version "1.11.8"
   resolved "https://registry.yarnpkg.com/@urql/core/-/core-1.11.8.tgz#6a3186ac84d6b08752585f42e8ec81539338d7a9"
   integrity sha512-lBlCjw3sLlblGIzRVg583IdsONUIt04f/LHI0oiEgNlPViZcRR3B31LCKyOChba/klIqSaDivaqCfzg5wyTPoQ==
   dependencies:
     wonka "^4.0.10"
-
-"@vimeo/player@^2.10.0":
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/@vimeo/player/-/player-2.13.0.tgz#28f7e2eb69716b7f9a7d5046d14185a33add1e26"
-  integrity sha512-XUUVr87bW6DLnlxHtnYVcboSOJOE2TKSm7UoGdaql9h/K274BuRon57nKJxAPxCS7gRT0D4D3o/zK9HxYwUXYA==
-  dependencies:
-    native-promise-only "0.8.1"
-    weakmap-polyfill "2.0.1"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -5314,11 +5283,6 @@ csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.10, csstype@^2.6.6, csstype@^2.6.9:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
-
-csstype@^3.0.2:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.3.tgz#2b410bbeba38ba9633353aff34b05d9755d065f8"
-  integrity sha512-jPl+wbWPOWJ7SXsWyqGRk3lGecbar0Cb0OvZF/r/ZU011R4YqiRehgkQ9p4eQfo9DSDLqLL3wHwfxeJiuIsNag==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -10748,11 +10712,6 @@ napi-build-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/napi-build-utils/-/napi-build-utils-1.0.2.tgz#b1fddc0b2c46e380a0b7a76f984dd47c41a13806"
   integrity sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==
 
-native-promise-only@0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/native-promise-only/-/native-promise-only-0.8.1.tgz#20a318c30cb45f71fe7adfbf7b21c99c1472ef11"
-  integrity sha1-IKMYwwy0X3H+et+/eyHJnBRy7xE=
-
 native-url@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/native-url/-/native-url-0.2.6.tgz#ca1258f5ace169c716ff44eccbddb674e10399ae"
@@ -15180,9 +15139,9 @@ typescript@^3.9.3:
   integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
 
 ua-parser-js@^0.7.18:
-  version "0.7.21"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
-  integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
+  version "0.7.35"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.35.tgz#8bda4827be4f0b1dda91699a29499575a1f1d307"
+  integrity sha512-veRf7dawaj9xaWEu9HoTVn5Pggtc/qj+kqTOFvNiN1l0YdxwC1kvel57UCjThjGa3BHBihE8/UJAHI+uQHmd/g==
 
 unbzip2-stream@^1.0.9:
   version "1.4.0"
@@ -15701,11 +15660,6 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   integrity sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
   dependencies:
     minimalistic-assert "^1.0.0"
-
-weakmap-polyfill@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/weakmap-polyfill/-/weakmap-polyfill-2.0.1.tgz#ff0278c7f75bb0c492fc3343257f3e87114d709a"
-  integrity sha512-Jy177Lvb1LCrPQDWJsXyyqf4eOhcdvQHFGoCqSv921kVF5i42MVbr4e2WEwetuTLBn1NX0IhPzTmMu0N3cURqQ==
 
 web-namespaces@^1.0.0, web-namespaces@^1.1.2:
   version "1.1.4"

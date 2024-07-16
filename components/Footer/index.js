@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.copy}>
-        &copy; 2022 Campfire Firm LLC
+        &copy; 2019-{(new Date()).getFullYear()} Campfire Firm LLC
       </div>
     </footer>
   )

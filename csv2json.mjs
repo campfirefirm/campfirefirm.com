@@ -1,7 +1,7 @@
-const parse = require('csv-parse/lib/sync')
-const fs = require('fs')
+import { parse } from 'csv/sync'
+import { readFileSync, writeFileSync } from 'fs'
 
-const csv = fs.readFileSync('videos.csv')
+const csv = readFileSync('videos.csv')
 
 const records = parse(csv, {
   columns: true,
@@ -17,8 +17,10 @@ const fin = records.map( r => {
   n['tags'] = r.Tags
     .replace(/ /g, '')
     .split(',')
-    .map(tag => 
-      tag.replace('P', 'Political')
+    .map(tag =>
+      tag
+        .replace('T', 'Tech')
+        .replace('P', 'Political')
         .replace('A', 'Ads')
         .replace('M', 'Miscellaneous')
         .replace('E', 'Explainers')
@@ -27,4 +29,4 @@ const fin = records.map( r => {
   return n;
 });
 
-fs.writeFileSync('./pages/video/videos.json', JSON.stringify(fin))
+writeFileSync('./pages/video/videos.json', JSON.stringify(fin))

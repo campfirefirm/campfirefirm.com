@@ -9,7 +9,7 @@ export default function Video() {
     threshold: buildThresholdArray(100)
   }) : [null, null];
 
-  const tags = ['all', 'Political', 'Ads', 'Explainers', 'Miscellaneous'];
+  const tags = ['all', 'Tech', 'Political', 'Ads', 'Explainers', 'Miscellaneous'];
   // videos.map(v => {
   //   for (let t of v.tags) {
   //     if (tags.indexOf(t) < 0) {

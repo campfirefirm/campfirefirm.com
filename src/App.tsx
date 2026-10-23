@@ -142,9 +142,7 @@ function App() {
               {/* <span /> Creative thinking. Thoughtful building. */}
             </p>
             <h1 id="hero-title">
-              Big ideas.
-              <br />
-              Good company.
+              Good company <br />for big ideas.
             </h1>
             <p className="hero-description">
               A creative and technical partner to bring it all to life.
@@ -322,7 +320,7 @@ function App() {
               ))}
             </div>
             <div className="approach-note">
-              <span className="small-spark">✳</span> We're here to help you succeed.
+              <span className="small-spark">*</span> We're here to help you succeed.
             </div>
           </div>
         </section>

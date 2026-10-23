@@ -358,8 +358,8 @@ function App() {
             <div className="contact-orbit orbit-one" />
             <div className="contact-orbit orbit-two" />
             <div className="contact-orbit orbit-three" />
-            <span className="contact-star star-one">✳</span>
-            <span className="contact-star star-two">✳</span>
+            <span className="contact-star star-one">*</span>
+            <span className="contact-star star-two">*</span>
             <span className="contact-dot" />
             <img src="/animation.gif" alt="" />
           </div>

@@ -1,6 +1,6 @@
 # Campfire Firm
 
-Vite + React starter for Cloudflare Pages.
+Campfire Firm’s landing page, built with Vite, React, and TypeScript for Cloudflare Pages.
 
 ## Local development
 
@@ -8,6 +8,18 @@ Vite + React starter for Cloudflare Pages.
 npm install
 npm run dev
 ```
+
+Run `npm run build` to type-check and generate the production site in `dist`. Run `npm run preview` to serve that build locally.
+
+## Page content
+
+- `src/App.tsx` contains the page copy, navigation, and contact links.
+- `src/style.css` contains the responsive layout and visual styles.
+- `loop.mp4` is the muted, looping hero video. Vite includes it in the production assets.
+- `public/hero-poster.jpg` is a still from the video, shown while it loads or when reduced motion is preferred.
+- `campfire_logo.svg` supplies the brand mark and favicon.
+
+The hero includes a pause/play button and respects the visitor’s reduced motion preference. Contact links open an email to `hello@campfirefirm.com`.
 
 ## Cloudflare Pages
 

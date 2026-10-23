@@ -26,43 +26,7 @@ function Arrow({ down = false }: { down?: boolean }) {
 function VideoIllustration() {
   return (
     <div className="service-art video-art" aria-hidden="true">
-      <div className="art-orbit" />
-      <div className="storyboard storyboard-back">
-        <span>01 / THE IDEA</span>
-        <div className="storyboard-landscape">
-          <i />
-          <i />
-          <i />
-        </div>
-      </div>
-      <div className="storyboard storyboard-front">
-        <div className="storyboard-top">
-          <span>THE STORY COMES TO LIFE</span>
-          <span className="record-dot" />
-        </div>
-        <div className="storyboard-screen">
-          <span className="play-symbol" />
-          <div className="screen-sun" />
-          <div className="screen-hill" />
-          <div className="screen-hill second" />
-        </div>
-        <div className="timeline">
-          <span />
-          <span />
-          <span />
-          <span />
-          <i />
-        </div>
-      </div>
-      <span className="art-note">
-        A little perspective. A lot of possibility.
-      </span>
-      <svg className="art-spark" width="39" height="39" viewBox="0 0 40 40">
-        <path
-          d="m20 1 1 14L32 6l-8 12 15 2-15 2 8 12-11-9-1 14-2-14-11 9 8-12-14-2 14-2L7 6l11 9Z"
-          fill="currentColor"
-        />
-      </svg>
+      <img src="/video-storytelling.jpg" alt="" loading="lazy" />
     </div>
   )
 }
@@ -70,48 +34,7 @@ function VideoIllustration() {
 function AiTrainingIllustration() {
   return (
     <div className="service-art software-art" aria-hidden="true">
-      <div className="code-grid" />
-      <div className="browser-art">
-        <div className="browser-bar">
-          <span />
-          <span />
-          <span />
-          <i>something-good.app</i>
-        </div>
-        <div className="browser-content">
-          <div className="code-panel">
-            <span className="code-comment">// make AI useful</span>
-            <span>
-              <b>const</b> learning = &#123;
-            </span>
-            <span className="code-indent">
-              thoughtful: <em>true</em>,
-            </span>
-            <span className="code-indent">
-              builtFor: <em>"people"</em>,
-            </span>
-            <span className="code-indent">
-              readyFor: <em>"what's next"</em>
-            </span>
-            <span>&#125;</span>
-            <span className="code-last">practiceTogether(learning)</span>
-          </div>
-          <div className="interface-panel">
-            <span className="interface-label" />
-            <span className="interface-title" />
-            <span className="interface-line" />
-            <span className="interface-line short" />
-            <div className="interface-blocks">
-              <span />
-              <span />
-            </div>
-            <span className="interface-button" />
-          </div>
-        </div>
-      </div>
-      <div className="build-badge">
-        <span>✓</span> Learn it. Use it. Make it yours.
-      </div>
+      <img src="/ai-learning.jpg" alt="" loading="lazy" />
     </div>
   )
 }
